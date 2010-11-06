@@ -34,7 +34,15 @@ NaProg::~NaProg()
 
 void NaProg::ausfuehren(QString program, QStringList arguments, QString work_path)
 {
+#if defined (Q_WS_MAC) | defined (Q_WS_X11)
+    QString mydelim = ":";
+#endif
+#if defined (Q_WS_WIN) | defined (__MINGW32__)
+    QString mydelim = ";";
+#endif
     execProg = new QProcess(this);
+    QStringList environment = QProcess::systemEnvironment();
+    environment.replaceInStrings(QRegExp("^PATH=(.*)", Qt::CaseInsensitive), "PATH=\\1"+mydelim+LaTeX_Path+mydelim+Lilypond_Path+mydelim+Gregorio_Path);
     execProg->setEnvironment(QProcess::systemEnvironment());
     execProg->setWorkingDirectory(work_path);
     execProg->setProcessChannelMode(QProcess::MergedChannels);
@@ -380,19 +388,28 @@ void NaProg::on_actionAufr_umen_triggered()
 {
  if (activeMdiChild())
     {
-       QStringList mitzugeben;
        QFileInfo openfile(activeMdiChild()->curFile);
        QString workingpath = openfile.absolutePath();
-       mitzugeben << " *.dep" << "*.aux" << "*.log" <<  "*.bbl" <<  "*.ilg" << "*.sav"
-               << "*.bak" << "*-blx.bib" << "*.out" << "*.toc" << "*.blg" << "*.ind" << "*.idx"
-               << "*.gaux" << "*.*~" << "*.backup" << "tmp*" << "snippet*" << "*-auto.tex";
-       foreach (QString str, mitzugeben)
+       QStringList garbage;
+       garbage << ".dep" << ".aux" << ".log" <<  ".bbl" <<  ".ilg" << ".sav"
+               << ".bak" << "-blx.bib" << ".out" << ".toc" << "*.blg" << ".ind" << ".idx"
+               << ".gaux" << "~" << ".backup" << "tmp" << "snippet" << "-auto.tex";
+       QDirIterator garbage_collector(workingpath,QDir::Files,QDirIterator::NoIteratorFlags);
+       while (garbage_collector.hasNext())
        {
-           QDir::setCurrent(workingpath);
-           QFile *removefile = new QFile(workingpath+"/"+str);
-           removefile->remove();
-       }
+           garbage_collector.next();
+           foreach (QString str, garbage)
+           {
+               if (garbage_collector.fileInfo().fileName().contains(str))
+               {
+                QDir::setCurrent(workingpath);
+                QFile *removefile = new QFile(garbage_collector.fileInfo().canonicalFilePath());
+                logWindow->append("Cleaning up "+garbage_collector.fileInfo().fileName());
+                removefile->remove();
+               }
+           }
 
+       }
    }
 
   else error_noopenfile();
