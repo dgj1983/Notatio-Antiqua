@@ -44,32 +44,32 @@ Would you like to save these changes?</source>
     <message>
         <location filename="naclefselect.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished">Dialog</translation>
+        <translation>Schlüsselauswahl</translation>
     </message>
     <message>
         <location filename="naclefselect.ui" line="65"/>
         <source>b durum</source>
-        <translation type="unfinished"></translation>
+        <translation>b durum</translation>
     </message>
     <message>
         <location filename="naclefselect.ui" line="78"/>
         <source>Clef</source>
-        <translation type="unfinished"></translation>
+        <translation>Schlüssel</translation>
     </message>
     <message>
         <location filename="naclefselect.ui" line="90"/>
         <source>c-clef</source>
-        <translation type="unfinished"></translation>
+        <translation>c-Schlüssel</translation>
     </message>
     <message>
         <location filename="naclefselect.ui" line="106"/>
         <source>f-clef</source>
-        <translation type="unfinished"></translation>
+        <translation>f-Schlüssel</translation>
     </message>
     <message>
         <location filename="naclefselect.ui" line="120"/>
         <source>Pitch</source>
-        <translation type="unfinished"></translation>
+        <translation>Höhe</translation>
     </message>
 </context>
 <context>
@@ -380,22 +380,22 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="naprog.ui" line="119"/>
         <source>Bars</source>
-        <translation type="unfinished"></translation>
+        <translation>Trennzeichen</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="130"/>
         <source>Symbols</source>
-        <translation type="unfinished"></translation>
+        <translation>Symbole</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="137"/>
         <source>Special Characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Spezielle Zeichen</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="146"/>
         <source>Choral Signs</source>
-        <translation type="unfinished"></translation>
+        <translation>Tempozeichen</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="167"/>
@@ -743,152 +743,152 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="naprog.ui" line="603"/>
         <source>Header Wizard</source>
-        <translation type="unfinished"></translation>
+        <translation>Header-Assistent</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="608"/>
         <source>c1</source>
-        <translation type="unfinished"></translation>
+        <translation>c1</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="613"/>
         <source>c2</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="naprog.ui" line="618"/>
         <source>c3</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="naprog.ui" line="623"/>
         <source>c4</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="naprog.ui" line="628"/>
         <source>f2</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="naprog.ui" line="633"/>
         <source>f3</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="naprog.ui" line="638"/>
         <source>f4</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="naprog.ui" line="643"/>
         <source>c-clef</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="naprog.ui" line="648"/>
         <source>c-clef with b-molle</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="naprog.ui" line="653"/>
         <source>f-clef</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="naprog.ui" line="658"/>
         <source>f-clef with b-molle</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="naprog.ui" line="663"/>
         <source>Virgula</source>
-        <translation type="unfinished"></translation>
+        <translation>Virgula</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="668"/>
         <source>Quarter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Divisio minima</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="673"/>
         <source>Half Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Divisio maior</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="678"/>
         <source>Double Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Divisio finalis</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="683"/>
         <source>Dagger</source>
-        <translation type="unfinished"></translation>
+        <translation>Flexa</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="688"/>
         <source>Cross</source>
-        <translation type="unfinished"></translation>
+        <translation>Kreuz</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="693"/>
         <source>Verse</source>
-        <translation type="unfinished"></translation>
+        <translation>Vers</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="698"/>
         <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation>Response</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="703"/>
         <source>Antiphon</source>
-        <translation type="unfinished"></translation>
+        <translation>Antiphon</translation>
     </message>
     <message utf8="true">
         <location filename="naprog.ui" line="708"/>
         <source>Accented æ</source>
-        <translation type="unfinished"></translation>
+        <translation>æ mit Akzent</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="713"/>
         <source>celeriter</source>
-        <translation type="unfinished"></translation>
+        <translation>celeriter</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="718"/>
         <source>tenere</source>
-        <translation type="unfinished"></translation>
+        <translation>tenere</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="723"/>
         <source>mediocriter</source>
-        <translation type="unfinished"></translation>
+        <translation>mediocriter</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="728"/>
         <source>non</source>
-        <translation type="unfinished"></translation>
+        <translation>non</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="733"/>
         <source>exspecta</source>
-        <translation type="unfinished"></translation>
+        <translation>exspecta</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="738"/>
         <source>Dominican Bars</source>
-        <translation type="unfinished"></translation>
+        <translation>Dominikanische Trenner</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="743"/>
         <source>Clef</source>
-        <translation type="unfinished"></translation>
+        <translation>Schlüssel-Assistent</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="746"/>
         <source>Ctrl+Alt+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+C</translation>
     </message>
     <message>
         <location filename="naprog.cpp" line="59"/>
@@ -914,13 +914,13 @@ p, li { white-space: pre-wrap; }
         <location filename="naprog.cpp" line="489"/>
         <location filename="naprog.cpp" line="569"/>
         <location filename="naprog.cpp" line="575"/>
-        <location filename="naprog.cpp" line="590"/>
-        <location filename="naprog.cpp" line="603"/>
-        <location filename="naprog.cpp" line="617"/>
-        <location filename="naprog.cpp" line="640"/>
-        <location filename="naprog.cpp" line="653"/>
-        <location filename="naprog.cpp" line="667"/>
-        <location filename="naprog.cpp" line="691"/>
+        <location filename="naprog.cpp" line="591"/>
+        <location filename="naprog.cpp" line="604"/>
+        <location filename="naprog.cpp" line="618"/>
+        <location filename="naprog.cpp" line="642"/>
+        <location filename="naprog.cpp" line="655"/>
+        <location filename="naprog.cpp" line="669"/>
+        <location filename="naprog.cpp" line="693"/>
         <source>Notatio Antiqua</source>
         <translation>Notatio Antiqua</translation>
     </message>
@@ -978,8 +978,8 @@ Do you really want to revert it to the last saved state?</source>
         <translation>Initialisierung der Pfade für LaTeX, Lilypond und Gregorio. Dies kann eine Weile dauern, bitte haben Sie Geduld.</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="591"/>
-        <location filename="naprog.cpp" line="641"/>
+        <location filename="naprog.cpp" line="592"/>
+        <location filename="naprog.cpp" line="643"/>
         <source>More than one path for LaTeX has been found:
 already scanned: %1
 newly discovered: %2
@@ -987,8 +987,8 @@ Do you want to use the newly discovered path instead?</source>
         <translation>Mehr als ein Pfad für LaTeX wurde gefunden: \n bereits gescannt: %1\n neu gefunden: %2\n Wollen Sie statt dem bereits gefundenen den neueren Pfad verwenden?</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="604"/>
-        <location filename="naprog.cpp" line="654"/>
+        <location filename="naprog.cpp" line="605"/>
+        <location filename="naprog.cpp" line="656"/>
         <source>More than one path for LilyPond has been found:
 already scanned: %1
 newly discovered: %2
@@ -996,8 +996,8 @@ Do you want to use the newly discovered path instead?</source>
         <translation>Mehr als ein Pfad für LilyPond wurde gefunden: \n bereits gescannt: %1\n neu gefunden: %2\n Wollen Sie statt dem bereits gefundenen den neueren Pfad verwenden?</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="618"/>
-        <location filename="naprog.cpp" line="668"/>
+        <location filename="naprog.cpp" line="619"/>
+        <location filename="naprog.cpp" line="670"/>
         <source>More than one path for Gregorio has been found:
 already scanned: %1
 newly discovered: %2
@@ -1005,7 +1005,7 @@ Do you want to use the newly discovered path instead?</source>
         <translation>Mehr als ein Pfad für Gregorio wurde gefunden: \n bereits gescannt: %1\n neu gefunden: %2\n Wollen Sie statt dem bereits gefundenen den neueren Pfad verwenden?</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="692"/>
+        <location filename="naprog.cpp" line="694"/>
         <source>The following paths have been found and have been written to ini file:
  LuaLaTeX: %1
  Lilypond: %2
