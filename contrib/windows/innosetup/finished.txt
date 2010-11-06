@@ -1,0 +1,3 @@
+Notatio Antiqua wurde vollständig installiert.
+Beim ersten Start des Programmes werden die Pfade zu LaTeX und Gregorio sowie Lilypond (falls vorhanden) automatisch gesucht. Dieser Vorgang kann eine Weile dauern, ich bitte um Geduld.
+

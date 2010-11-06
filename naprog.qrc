@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/copy.png</file>
+        <file>images/cut.png</file>
+        <file>images/find.png</file>
+        <file>images/help.png</file>
+        <file>images/info.png</file>
+        <file>images/latexpdf.png</file>
+        <file>images/new.png</file>
+        <file>images/open.png</file>
+        <file>images/paste.png</file>
+        <file>images/pdf.png</file>
+        <file>images/print.png</file>
+        <file>images/save.png</file>
+        <file>images/saveas.png</file>
+        <file>images/configure.png</file>
+        <file>images/exit.png</file>
+        <file>images/utilities.png</file>
+        <file>images/clean.png</file>
+        <file>help/helpindex-de.html</file>
+        <file>images/notantiq.icns</file>
+        <file>images/notantiq.ico</file>
+    </qresource>
+</RCC>

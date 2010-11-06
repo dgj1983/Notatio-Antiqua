@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NaProg</class>
+ <widget class="QMainWindow" name="NaProg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>794</width>
+    <height>466</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NaProg</string>
+  </property>
+  <property name="documentMode">
+   <bool>true</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QMdiArea" name="mdiArea">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-1</y>
+      <width>960</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="background">
+     <brush brushstyle="SolidPattern">
+      <color alpha="255">
+       <red>255</red>
+       <green>255</green>
+       <blue>230</blue>
+      </color>
+     </brush>
+    </property>
+    <property name="activationOrder">
+     <enum>QMdiArea::StackingOrder</enum>
+    </property>
+    <property name="viewMode">
+     <enum>QMdiArea::TabbedView</enum>
+    </property>
+    <property name="documentMode">
+     <bool>true</bool>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>794</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu</family>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuDatei">
+    <property name="locale">
+     <locale language="C" country="AnyCountry"/>
+    </property>
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNeu"/>
+    <addaction name="action_ffnen"/>
+    <addaction name="separator"/>
+    <addaction name="actionSpeichern"/>
+    <addaction name="actionSpeichern_unter"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuelle_drucken"/>
+    <addaction name="separator"/>
+    <addaction name="actionErneut_ffnen"/>
+    <addaction name="separator"/>
+    <addaction name="actionBeenden"/>
+   </widget>
+   <widget class="QMenu" name="menuBearbeiten">
+    <property name="locale">
+     <locale language="C" country="AnyCountry"/>
+    </property>
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionKopieren"/>
+    <addaction name="actionAusschneiden"/>
+    <addaction name="actionEinf_gen"/>
+   </widget>
+   <widget class="QMenu" name="menuEinf_gen">
+    <property name="locale">
+     <locale language="C" country="AnyCountry"/>
+    </property>
+    <property name="title">
+     <string>Insert</string>
+    </property>
+    <widget class="QMenu" name="menuBars">
+     <property name="title">
+      <string>Bars</string>
+     </property>
+     <addaction name="actionVirgula"/>
+     <addaction name="actionQuarter_Bar"/>
+     <addaction name="actionHalf_Bar"/>
+     <addaction name="actionDouble_Bar"/>
+     <addaction name="separator"/>
+     <addaction name="actionDominican_Bars"/>
+    </widget>
+    <widget class="QMenu" name="menuSymbols">
+     <property name="title">
+      <string>Symbols</string>
+     </property>
+     <addaction name="actionDagger"/>
+     <addaction name="actionCross"/>
+    </widget>
+    <widget class="QMenu" name="menuSpecial_Characters">
+     <property name="title">
+      <string>Special Characters</string>
+     </property>
+     <addaction name="actionVerse"/>
+     <addaction name="actionResponse"/>
+     <addaction name="actionAntiphon"/>
+     <addaction name="actionAccented"/>
+    </widget>
+    <widget class="QMenu" name="menuChoral_Signs">
+     <property name="title">
+      <string>Choral Signs</string>
+     </property>
+     <addaction name="actionCeleriter"/>
+     <addaction name="actionTenere"/>
+     <addaction name="actionMediocriter"/>
+     <addaction name="actionNon"/>
+     <addaction name="actionExspecta"/>
+    </widget>
+    <addaction name="actionClef"/>
+    <addaction name="actionHeader_Wizard"/>
+    <addaction name="separator"/>
+    <addaction name="menuBars"/>
+    <addaction name="menuSymbols"/>
+    <addaction name="menuSpecial_Characters"/>
+    <addaction name="menuChoral_Signs"/>
+   </widget>
+   <widget class="QMenu" name="menuFenster">
+    <property name="locale">
+     <locale language="C" country="AnyCountry"/>
+    </property>
+    <property name="title">
+     <string>Window</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHilfe">
+    <property name="locale">
+     <locale language="C" country="AnyCountry"/>
+    </property>
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="action_ber"/>
+    <addaction name="action_ber_2"/>
+   </widget>
+   <widget class="QMenu" name="menuEinstellungen">
+    <property name="locale">
+     <locale language="C" country="AnyCountry"/>
+    </property>
+    <property name="title">
+     <string>E&amp;xtras</string>
+    </property>
+    <addaction name="actionEinstellungen_2"/>
+    <addaction name="actionInitialisierung"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuErstellen">
+    <property name="locale">
+     <locale language="C" country="AnyCountry"/>
+    </property>
+    <property name="title">
+     <string>Process</string>
+    </property>
+    <addaction name="actionLaTeX_PDF"/>
+    <addaction name="actionLyTeX_PDF"/>
+    <addaction name="actionGregorioTeX_PDF"/>
+    <addaction name="separator"/>
+    <addaction name="actionAufr_umen"/>
+    <addaction name="separator"/>
+    <addaction name="actionPDF_ansehen"/>
+   </widget>
+   <addaction name="menuDatei"/>
+   <addaction name="menuBearbeiten"/>
+   <addaction name="menuEinf_gen"/>
+   <addaction name="menuErstellen"/>
+   <addaction name="menuFenster"/>
+   <addaction name="menuEinstellungen"/>
+   <addaction name="menuHilfe"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="fileToolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="locale">
+    <locale language="C" country="AnyCountry"/>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNeu"/>
+   <addaction name="action_ffnen"/>
+   <addaction name="actionSpeichern"/>
+   <addaction name="actionSpeichern_unter"/>
+   <addaction name="separator"/>
+   <addaction name="actionQuelle_drucken"/>
+  </widget>
+  <widget class="QToolBar" name="editToolBar">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionKopieren"/>
+   <addaction name="actionAusschneiden"/>
+   <addaction name="actionEinf_gen"/>
+  </widget>
+  <widget class="QToolBar" name="createToolBar">
+   <property name="font">
+    <font>
+     <family>Ubuntu</family>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <property name="toolTip">
+    <string>Ein Click auf diesen Button wandelt eine vorhandene GABC-Datei in eine PDF um (Mit Umweg über LuaLaTeX)</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionLaTeX_PDF"/>
+   <addaction name="actionLyTeX_PDF"/>
+   <addaction name="actionGregorioTeX_PDF"/>
+   <addaction name="actionPDF_ansehen"/>
+   <addaction name="actionAufr_umen"/>
+  </widget>
+  <action name="action_ber">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/help.png</normaloff>:/images/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+   <property name="toolTip">
+    <string>Help</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="action_ber_2">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/info.png</normaloff>:/images/info.png</iconset>
+   </property>
+   <property name="text">
+    <string>About Notatio Antiqua</string>
+   </property>
+   <property name="toolTip">
+    <string>About Notatio Antiqua</string>
+   </property>
+   <property name="shortcut">
+    <string>F13</string>
+   </property>
+  </action>
+  <action name="actionEinstellungen_2">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/utilities.png</normaloff>:/images/utilities.png</iconset>
+   </property>
+   <property name="text">
+    <string>Options</string>
+   </property>
+   <property name="toolTip">
+    <string>Editor settings and environment settings</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+,</string>
+   </property>
+  </action>
+  <action name="actionNeu">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/new.png</normaloff>
+     <normalon>images/new.png</normalon>:/images/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+   <property name="statusTip">
+    <string>Neu</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_ffnen">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/open.png</normaloff>:/images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Op&amp;en</string>
+   </property>
+   <property name="toolTip">
+    <string>Op&amp;en</string>
+   </property>
+   <property name="statusTip">
+    <string>Öffnet eine Datei</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionSpeichern">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/save.png</normaloff>:/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="toolTip">
+    <string>Save current document</string>
+   </property>
+   <property name="statusTip">
+    <string>Datei speichern</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSpeichern_unter">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/saveas.png</normaloff>:/images/saveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save &amp;as</string>
+   </property>
+   <property name="toolTip">
+    <string>Save current document as...</string>
+   </property>
+   <property name="statusTip">
+    <string>Datei unter anderem Namen speichern</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionQuelle_drucken">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/print.png</normaloff>:/images/print.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+   <property name="toolTip">
+    <string>Print source code</string>
+   </property>
+   <property name="statusTip">
+    <string>Quelltext drucken</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionErneut_ffnen">
+   <property name="text">
+    <string>Reopen</string>
+   </property>
+   <property name="toolTip">
+    <string>Reopen current document</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionBeenden">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/exit.png</normaloff>:/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="toolTip">
+    <string>Quit Notatio Antiqua</string>
+   </property>
+   <property name="statusTip">
+    <string>Notatio Antiqua schließen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionKopieren">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/copy.png</normaloff>:/images/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="toolTip">
+    <string>Copy</string>
+   </property>
+   <property name="statusTip">
+    <string>Ausschnitt kopieren</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionAusschneiden">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/cut.png</normaloff>:/images/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+   <property name="toolTip">
+    <string>Cut</string>
+   </property>
+   <property name="statusTip">
+    <string>Ausschneiden</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionEinf_gen">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/paste.png</normaloff>:/images/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="toolTip">
+    <string>Paste</string>
+   </property>
+   <property name="statusTip">
+    <string>Einfügen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionLaTeX_PDF">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/latexpdf.png</normaloff>:/images/latexpdf.png</iconset>
+   </property>
+   <property name="text">
+    <string>LaTeX-&gt;PDF</string>
+   </property>
+   <property name="statusTip">
+    <string>LaTeX-Datei in PDF kompilieren</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionLyTeX_PDF">
+   <property name="text">
+    <string>LyTeX-&gt;PDF</string>
+   </property>
+   <property name="statusTip">
+    <string>Lilypond+LaTeX-Datei in PDF verwandeln</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionGregorioTeX_PDF">
+   <property name="text">
+    <string>GregorioTeX-&gt;PDF</string>
+   </property>
+   <property name="statusTip">
+    <string>gabc-&gt;GregorioTeX-&gt;PDF</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionAufr_umen">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/clean.png</normaloff>:/images/clean.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clean up</string>
+   </property>
+   <property name="toolTip">
+    <string>Clean up temporary files</string>
+   </property>
+   <property name="statusTip">
+    <string>unnötige temporäre Dateien aufräumen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionPDF_ansehen">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/pdf.png</normaloff>:/images/pdf.png</iconset>
+   </property>
+   <property name="text">
+    <string>View PDF</string>
+   </property>
+   <property name="toolTip">
+    <string>View PDF</string>
+   </property>
+   <property name="statusTip">
+    <string>erstellte PDF ansehen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+V</string>
+   </property>
+  </action>
+  <action name="actionInitialisierung">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/configure.png</normaloff>:/images/configure.png</iconset>
+   </property>
+   <property name="text">
+    <string>Initialize Notatio Antiqua</string>
+   </property>
+   <property name="toolTip">
+    <string>Initialize Notatio Antiqua (searching application paths &amp;c)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+Shift+I</string>
+   </property>
+  </action>
+  <action name="actionHeader_Wizard">
+   <property name="text">
+    <string>Header Wizard</string>
+   </property>
+  </action>
+  <action name="actionC1">
+   <property name="text">
+    <string>c1</string>
+   </property>
+  </action>
+  <action name="actionC2">
+   <property name="text">
+    <string>c2</string>
+   </property>
+  </action>
+  <action name="actionC3">
+   <property name="text">
+    <string>c3</string>
+   </property>
+  </action>
+  <action name="actionC4">
+   <property name="text">
+    <string>c4</string>
+   </property>
+  </action>
+  <action name="actionF2">
+   <property name="text">
+    <string>f2</string>
+   </property>
+  </action>
+  <action name="actionF3">
+   <property name="text">
+    <string>f3</string>
+   </property>
+  </action>
+  <action name="actionF4">
+   <property name="text">
+    <string>f4</string>
+   </property>
+  </action>
+  <action name="actionC_clef">
+   <property name="text">
+    <string>c-clef</string>
+   </property>
+  </action>
+  <action name="actionC_clef_with_b_molle">
+   <property name="text">
+    <string>c-clef with b-molle</string>
+   </property>
+  </action>
+  <action name="actionF_clef">
+   <property name="text">
+    <string>f-clef</string>
+   </property>
+  </action>
+  <action name="actionF_clef_with_b_molle">
+   <property name="text">
+    <string>f-clef with b-molle</string>
+   </property>
+  </action>
+  <action name="actionVirgula">
+   <property name="text">
+    <string>Virgula</string>
+   </property>
+  </action>
+  <action name="actionQuarter_Bar">
+   <property name="text">
+    <string>Quarter Bar</string>
+   </property>
+  </action>
+  <action name="actionHalf_Bar">
+   <property name="text">
+    <string>Half Bar</string>
+   </property>
+  </action>
+  <action name="actionDouble_Bar">
+   <property name="text">
+    <string>Double Bar</string>
+   </property>
+  </action>
+  <action name="actionDagger">
+   <property name="text">
+    <string>Dagger</string>
+   </property>
+  </action>
+  <action name="actionCross">
+   <property name="text">
+    <string>Cross</string>
+   </property>
+  </action>
+  <action name="actionVerse">
+   <property name="text">
+    <string>Verse</string>
+   </property>
+  </action>
+  <action name="actionResponse">
+   <property name="text">
+    <string>Response</string>
+   </property>
+  </action>
+  <action name="actionAntiphon">
+   <property name="text">
+    <string>Antiphon</string>
+   </property>
+  </action>
+  <action name="actionAccented">
+   <property name="text">
+    <string>Accented æ</string>
+   </property>
+  </action>
+  <action name="actionCeleriter">
+   <property name="text">
+    <string>celeriter</string>
+   </property>
+  </action>
+  <action name="actionTenere">
+   <property name="text">
+    <string>tenere</string>
+   </property>
+  </action>
+  <action name="actionMediocriter">
+   <property name="text">
+    <string>mediocriter</string>
+   </property>
+  </action>
+  <action name="actionNon">
+   <property name="text">
+    <string>non</string>
+   </property>
+  </action>
+  <action name="actionExspecta">
+   <property name="text">
+    <string>exspecta</string>
+   </property>
+  </action>
+  <action name="actionDominican_Bars">
+   <property name="text">
+    <string>Dominican Bars</string>
+   </property>
+  </action>
+  <action name="actionClef">
+   <property name="text">
+    <string>Clef</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+C</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="naprog.qrc"/>
+ </resources>
+ <connections/>
+</ui>

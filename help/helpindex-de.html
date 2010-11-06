@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1038.32">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier; color: #1b17ee}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier; color: #1b17ee; min-height: 14.0px}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p9 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times}
+    span.s1 {text-decoration: underline ; color: #1b17ee}
+    span.s2 {text-decoration: underline}
+    span.s3 {color: #000000}
+    span.s4 {font: 12.0px Courier}
+  </style>
+</head>
+<body>
+<p class="p1"><b>Willkommen bei Notatio Antiqua 0.7 Beta</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p3">Dieses Programm kann aus GABC-Dateien fertige PDFs erstellen. Dazu bedient es</p>
+<p class="p3">sich des Textsatzsystems LaTeX (LuaLaTeX) und der Software "gregorio". Bei der Übersetzung (GregorioTeX-&gt;PDF) werden Sie aufgefordert, eine Vorlage auszuwählen. Diese Vorlagen befinden sich im Ordner "templates" im Programmverzeichnis.</p>
+<p class="p4"><br></p>
+<p class="p3">Headerfelder in GABC-Dateien und ihre Bedeutung:</p>
+<p class="p4"><br></p>
+<p class="p5"><span class="s1">name</span>: incipit;</p>
+<p class="p5"><span class="s1">gabc-copyright</span>: Copyright fÃ¼r diese gabc-Datei;</p>
+<p class="p5"><span class="s1">score-copyright</span>: Copyright fÃ¼r das Quellmanuskript;</p>
+<p class="p5"><span class="s1">office-part</span>: Introitus/...;</p>
+<p class="p5"><span class="s1">occasion</span>: Im Kirchenkalender;</p>
+<p class="p5"><span class="s1">meter</span>: fÃ¼r metrische Hymnen;</p>
+<p class="p5"><span class="s1">commentary</span>: Bibelstelle etc. fÃ¼r den Text;</p>
+<p class="p5"><span class="s1">arranger</span>: Name des Arrangierers;</p>
+<p class="p6"><span class="s2">gabc-version</span><span class="s3">: 0.9.3;</span></p>
+<p class="p5"><span class="s1">author</span>: soweit bekannt;</p>
+<p class="p5"><span class="s1">date</span>: xi c;</p>
+<p class="p5"><span class="s1">manuscript</span>: Handschriftname;</p>
+<p class="p5"><span class="s1">manuscript-reference</span>: beispielsweise CAO-Referenz;</p>
+<p class="p6"><span class="s2">manuscript-storage-place</span><span class="s3">: Bibliothek/Kloster;</span></p>
+<p class="p5"><span class="s1">book</span>: aus welchem Buch genommen;</p>
+<p class="p5"><span class="s1">transcriber</span>: Autor der GABC-Datei;</p>
+<p class="p6"><span class="s2">transcription-date</span><span class="s3">: 2010;</span></p>
+<p class="p6"><span class="s2">gregoriotex-font</span><span class="s3">: greciliae;</span></p>
+<p class="p5"><span class="s1">mode</span>: 6;</p>
+<p class="p6"><span class="s2">initial-style</span><span class="s3">: 1;</span></p>
+<p class="p5"><span class="s1">user-notes</span>: eigene Kommentare;</p>
+<p class="p6"><span class="s2">annotation</span><span class="s3">: IN.;</span></p>
+<p class="p6"><span class="s2">annotation</span><span class="s3">: 6;</span></p>
+<p class="p5">%%</p>
+<p class="p6"><span class="s2">(clef) Text(Noten)</span></p>
+<p class="p7"><span class="s2"></span><br></p>
+<p class="p8">name</p>
+<p class="p8">Der Name des Stücks, in den meisten Fällen das incipit, die ersten Worte. Im Falle eines Messordinariums wird z. B. <span class="s4">Kyrie X Alme Pater</span> oder <span class="s4">Sanctus XI</span> als Titel empfohlen.</p>
+<p class="p8">gabc-copyright</p>
+<p class="p8">Diese Lizenz ist die Copyright-Notiz (englisch zu verfassen) für die gabc-Datei, je nachdem, unter welcher Lizenz der Schreiber (dessen Name in das Feld <span class="s4">gabc-Copyright</span> einzutragen ist)die Datei veröffentlichen möchte. Außer der Lizenz kann dieses Feld eine kurze Beschreibung der Lizenz enthalten, so wie etwa <span class="s4">public domain</span>, <span class="s4">CC-by-sa</span>; die vollständige Lizenz sollte in einer eigenen Textdatei untergebracht werden. Zu den gesetzlichen Bestimmungen, die für gregorianische Notation zutreffen, lesen Sie bitte <a href="http://home.gna.org/gregorio/gregorio/legalissues"><span class="s1">die dafür eingerichtete Seite auf diesem Server</span></a>. Ein Beispiel, wie dieses Feld aussehen kann:</p>
+<p class="p5">(C) Elie Roux, 2009, public domain</p>
+<p class="p8">score-copyright</p>
+<p class="p8">Dieses Feld enthält die Copyright-Notiz (englisch) der verwendeten Quellnoten, aus denen die gabc-Datei entstanden ist. Wie bei der gabc-Lizenz gibt es auch hier die Möglichkeit einer kurzen Beschreibung. In unklaren oder komplexen Fällen kann dieses Feld leer gelassen werden. Am Besten ist es, wenn der Copyright-Inhaber und der Lizenzierer des Stücks eine Person sind. Auch hier siehe die <a href="http://home.gna.org/gregorio/gregorio/legalissues"><span class="s1">Seite zur Gesetzeslage</span></a>. Ein Beispiel, wie dieses Feld aussehen kann:</p>
+<p class="p5">(C) Abbaye de Solesmes, 1934</p>
+<p class="p8">office-part</p>
+<p class="p8">Dieses Feld beinhaltet die liturgische Kategorie für das Stück, beispielsweise: antiphona, hymnus, responsorium brevium, responsorium prolixum, introitus, graduale, tractus, offertorium, communio, kyrie, gloria, credo, sanctus, benedictus, agnus dei.</p>
+<p class="p8">occasion</p>
+<p class="p8">Dieses Feld beinhaltet Informationen über die Verortung im liturgischen Kalender, beispielsweise <span class="s4">Dominica II Adventus</span>, <span class="s4">Commune doctorum</span>, <span class="s4">Feria secunda</span>.</p>
+<p class="p8">meter</p>
+<p class="p8">FÃ¼r Hymnen oder andere Stücke mit sich wiederholenden Strophen wird hier das Metrum eingetragen, die Zahl der Silben in jeder Zeile einer Strophe. Für typische ambrosianische Hymnen wäre dies beispielsweise 8.8.8.8: Vier Zeilen von je acht Silben.</p>
+<p class="p8">commentary</p>
+<p class="p8">Hier können Kommentare eingefügt werden, beispielsweise die verwendete Bibelstelle für den Text.</p>
+<p class="p8">arranger</p>
+<p class="p8">Der Name eines modernen Arrangierers, wenn ein traditioneller Choral auf einen neuen Text adaptiert wurde oder ein Manuskript in Quadratnotation überführt wurde. Dies kann auch ein Firmenname sein. Beispiel: <span class="s4">Solesmes</span>.</p>
+<p class="p8">gabc-version</p>
+<p class="p8">Die Version von gabc, die zum Setzen benutzt wurde. Zur Zeit sollte dies dieselbe Version wie die gregorio-Version sein.</p>
+<p class="p8">author</p>
+<p class="p8">Der Autor des Stücks, soweit bekannt; natürlich sind die meisten Autoren für Choralstücke unbekannt.</p>
+<p class="p8">date</p>
+<p class="p8">Das Datum der Komposition oder seiner ältesten überlieferten Handschrift. Bei den meisten Stücken wird das lediglich annähernd bestimmbar sein wie z. B. <span class="s4">XI. s.</span> für 11. Jahrhundert. Die Konvention gibt vor, lateinische Zahlen zu benutzen, so wie im vorangehenden Beispiel.</p>
+<p class="p8">manuscript</p>
+<p class="p8">FÃ¼r Transkriptionen direkt aus einem Manuskript der Name der Handschrift, beispielsweise <span class="s4">Montpellier H.159</span>.</p>
+<p class="p8">manuscript-reference</p>
+<p class="p8">Eine eindeutige Referenz für das Zück, nach gut bekannten Systemen. Beispielsweise kann die Referenz mit <span class="s4">cao</span> (in der Cantus database of office chants) beginnen. Wenn die Referenz unklar in Bezug auf das benutzte System ist, sollte der Name des Systems vorangestellt werden. Die Referenz sollte das <i>Stück</i>, nicht das gesamte Manuskript, bezeichnen; alles, was das gesamte Manuskript bezeichnet, gehört in das Feld <span class="s4">manuscript</span>.</p>
+<p class="p8">manuscript-storage-place</p>
+<p class="p8">Für Trankriptionen direkt aus einem Manuskript: der Ort, an dem das Manuskript sich befindet; beispielsweise <span class="s4">Bibliothéque Nationale, Paris</span>.</p>
+<p class="p8">book</p>
+<p class="p8">Für Transkriptionen aus einer modernen Ausgabe (wie diejenigen von Solesmes); <span class="s4">modern</span> bezieht sich auf Ausgaben mindestens bis zum 19. Jahrhundert. Das Feld sollte den Namen dieser Ausgabe beinhalten, wie <span class="s4">Liber Usualis</span>.</p>
+<p class="p8">transcriber</p>
+<p class="p8">Der Name des Transkriptors.</p>
+<p class="p8">transcription-date</p>
+<p class="p8">Das Datum der Transkription, in der folgenden Form: jjjjmmtt, wie 20090129 für den 29. Januar 2009.</p>
+<p class="p8">gregoriotex-font</p>
+<p class="p8">Die Schrift, die von GregorioTeX benutzt wird; zur Zeit sind drei Schriften kompatibel: <span class="s4">greciliae</span>, <span class="s4">gregorio</span> und <span class="s4">parmesan</span>.</p>
+<p class="p8">mode</p>
+<p class="p8">Der Ton des Stücks, normalerweise eine arabische Ziffer zwischen 1 und 8 bzw. jeder beliebige Text für andere Fälle. Dieser Text kommt nicht über die Initiale, dafür siehe <span class="s1">annotation</span>.</p>
+<p class="p8">initial-style</p>
+<p class="p8">Der Stil der Initiale. 0 bedeutet keine Initiale, 1 eine "normale", 2 eine große über zwei Zeilen. Beachten Sie, dass Sie die ersten zwei Zeilenumbrüche manuell festlegen sollten, wenn die Initiale über zwei Zeilen gehen soll.</p>
+<p class="p8">user-notes</p>
+<p class="p8">Hier kann jeder beliebige Text hinein, der die anderen Header-Felder ergänzt. Soweit möglich sollten aber für die Informationen zum Stück die vorgesehenen Felder ausgefüllt werden, um ein bestimmtes Stück leichter auffinden zu können.</p>
+<p class="p8">annotation</p>
+<p class="p8">Hier wird der Text über der Initiale eingefügt, üblicherweise eine Abkürzung der liturgischen Verortung in der ersten Zeile und eine Bezeichnung des Modus in der zweiten Zeile. Bis zu zwei dieser Felder können benutzt werden; werden zwei benutzt, ist das erste die obere, das zweite die untere Zeile über der Initiale. Ein Beispiel:</p>
+<p class="p5">annotation:Ad Magnif.;</p>
+<p class="p5">annotation:VIII G;</p>
+<p class="p8">generated-by</p>
+<p class="p8">Name der Software, die die gabc-Datei erstellt hat. Wenn Sie sie selbst verfasst haben, sollte dieses Feld nicht verwendet werden.</p>
+<p class="p8">style</p>
+<p class="p8">Der typographische Stil der Musik. Bisher noch nicht unterstützt, daher ist dieser Eintrag (noch) funktionslos. Beispiele: <span class="s4">editio vaticana</span>, <span class="s4">editio medicea</span>.</p>
+<p class="p8">virgula-position</p>
+<p class="p8">Position der Virgula. Noch nicht unterstüzt, daher ist dieser Eintrag (noch) funktionslos. Beispiele: <span class="s4">top</span>, <span class="s4">bottom</span>.</p>
+<p class="p8">number-of-voices</p>
+<p class="p8">Anzahl der Stimmen in einem polyphonen Stück</p>
+<p class="p9">Nach dem Separator <span class="s4">%%</span> folgen die Noten: <span class="s4">(clef) text(notes)</span>. Im Folgenden soll es nur um diesen Teil der Datei gehen, das Kernstück der Notation.</p>
+</body>
+</html>
