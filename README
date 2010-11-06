@@ -1,0 +1,14 @@
+Notatio Antiqua 0.6
+-------------------
+
+Steps leading to your compiled version of Notatio Antiqua after having 
+installed Qt 4.7.0 SDK (LGPL)
+
+1. Open NotAntiq.pro in Qt Creator
+2. Check the Compiling options, adapt them to your system (Release//Debug)
+3. Press the green start button. Voilà!
+
+Any questions, tipps and complaints can be sent by mail to 
+davidgippner@googlemail.com 
+
+Thank you for testing!
