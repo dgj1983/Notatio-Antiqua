@@ -278,14 +278,26 @@ void NaProg::updateMenus()
 
 }
 
-void NaProg::on_actionSchlie_en_triggered()
-{
-    activeMdiChild()->close();
-      setWindowTitle("Notatio Antiqua");
-}
-
 void NaProg::createWorkspaces()
 {
+    connect(ui->actionBeenden, SIGNAL(triggered()), qApp, SLOT(closeAllWindows()));
+    setCentralWidget(ui->mdiArea);
+    nadock = new QDockWidget;
+    logWindow = new QTextEdit;
+    logWindow->setReadOnly(true);
+    nadock->setWindowTitle(tr("Program output"));
+    nadock->setAllowedAreas(Qt::BottomDockWidgetArea);
+    nadock->setFeatures(QDockWidget::NoDockWidgetFeatures);
+    nadock->setWidget(logWindow);
+    addDockWidget(Qt::BottomDockWidgetArea, nadock);
+    connect(ui->mdiArea, SIGNAL(subWindowActivated(QMdiSubWindow *)),
+            this, SLOT(updateMenus()));
+    windowMapper = new QSignalMapper(this);
+    connect(windowMapper, SIGNAL(mapped(QWidget *)),
+            this, SLOT(setActiveSubWindow(QWidget *)));
+    setWindowTitle(tr("Notatio Antiqua 0.7 beta"));
+    setUnifiedTitleAndToolBarOnMac(true);
+    setStatusBar(statusBar());
     QSettings* preferences = new QSettings(QSettings::IniFormat, QSettings::UserScope,
     "DGSOFTWARE", "Notatio Antiqua");
     QFileInfo areprefsexisting(preferences->fileName());
@@ -304,24 +316,7 @@ void NaProg::createWorkspaces()
             this, SLOT(offenLetzte()));
     connect(ui->actionErneut_ffnen,SIGNAL(triggered()),this,SLOT(offenWieder()));
     ui->menuDatei->addAction(lastOpenFile);
-    connect(ui->actionBeenden, SIGNAL(triggered()), qApp, SLOT(closeAllWindows()));
-    setCentralWidget(ui->mdiArea);
-    nadock = new QDockWidget;
-    logWindow = new QTextEdit;
-    logWindow->setReadOnly(true);
-    nadock->setWindowTitle(tr("Program output"));
-    nadock->setAllowedAreas(Qt::BottomDockWidgetArea);
-    nadock->setFeatures(QDockWidget::NoDockWidgetFeatures);
-    nadock->setWidget(logWindow);
-    addDockWidget(Qt::BottomDockWidgetArea, nadock);
-    connect(ui->mdiArea, SIGNAL(subWindowActivated(QMdiSubWindow *)),
-            this, SLOT(updateMenus()));
-    windowMapper = new QSignalMapper(this);
-    connect(windowMapper, SIGNAL(mapped(QWidget *)),
-            this, SLOT(setActiveSubWindow(QWidget *)));
-    setWindowTitle(tr("Notatio Antiqua 0.7 beta"));
-    setUnifiedTitleAndToolBarOnMac(true);
-    setStatusBar(statusBar());    
+
 }
 
 void NaProg::on_actionLaTeX_PDF_triggered()
@@ -380,7 +375,8 @@ void NaProg::on_actionPDF_ansehen_triggered()
 
 void NaProg::on_actionEinstellungen_2_triggered()
 {
-  NASettings* settingsdlg = new NASettings;
+    NASettings* settingsdlg = new NASettings;
+  settingsdlg->setModal(true);
   settingsdlg->show();
 }
 
@@ -448,8 +444,10 @@ void NaProg::gregorio_extract()
               hi.mode = element.section(":",1,1).simplified();
 
          if (element.contains("annotation:"))
+         {
               if (hi.annotation1.isEmpty()) hi.annotation1 = element.section(":",1,1).simplified();
               else hi.annotation2 = element.section(":",1,1).simplified();
+         }
 
          if (element.contains("commentary:"))
               hi.commentary = element.section(":",1,1).simplified();
@@ -596,7 +594,7 @@ void NaProg::initialization()
     Lilypond_Path = "";
     Gregorio_Path = "";
     // QDesktopServices::storageLocation(QDesktopServices::ApplicationsLocation
-#if defined (Q_WS_X11) | defined (Q_WS_MAC)
+#ifdef Q_WS_X11
     QDirIterator where_are_you("/usr",QDir::Files,QDirIterator::Subdirectories);
     while (where_are_you.hasNext())
     {
@@ -646,8 +644,57 @@ void NaProg::initialization()
 
     }
 #endif
+#ifdef Q_WS_MAC
+        QDirIterator where_are_you("/usr",QDir::Files,QDirIterator::Subdirectories);
+        while (where_are_you.hasNext())
+        {
+            where_are_you.next();
+            logWindow->append("Searching in:"+where_are_you.fileInfo().canonicalPath());
+            if (where_are_you.fileInfo().fileName() == "lualatex")
+            {
+                if (LaTeX_Path.isEmpty())
+                    LaTeX_Path = where_are_you.fileInfo().canonicalPath();
+                else if (QMessageBox::question(this,tr("Notatio Antiqua"),
+                                               tr("More than one path for LaTeX has been found:\n"
+                                                  "already scanned: %1\n"
+                                                  "newly discovered: %2\n"
+                                                  "Do you want to use the newly discovered path instead?")
+                    .arg(LaTeX_Path)
+                    .arg(where_are_you.fileInfo().canonicalPath()),
+                    QMessageBox::Yes|QMessageBox::No) == QMessageBox::Yes) LaTeX_Path = where_are_you.fileInfo().canonicalPath();
+            }
+            if (where_are_you.fileInfo().fileName() == "lilypond-book")
+            {
+                if (Lilypond_Path.isEmpty())
+                    Lilypond_Path = where_are_you.fileInfo().canonicalPath();
+                else if (QMessageBox::question(this,tr("Notatio Antiqua"),
+                                               tr("More than one path for LilyPond has been found:\n"
+                                                  "already scanned: %1\n"
+                                                  "newly discovered: %2\n"
+                                                  "Do you want to use the newly discovered path instead?")
+                    .arg(Lilypond_Path)
+                    .arg(where_are_you.fileInfo().canonicalPath()),
+                    QMessageBox::Yes|QMessageBox::No) == QMessageBox::Yes) Lilypond_Path = where_are_you.fileInfo().canonicalPath();
+            }
 
-#if defined (Q_WS_WIN) | defined (__MINGW32__)
+            if (where_are_you.fileInfo().fileName() == "gregorio")
+            {
+                if (Gregorio_Path.isEmpty())
+                    Gregorio_Path = where_are_you.fileInfo().canonicalPath();
+                else if (QMessageBox::question(this,tr("Notatio Antiqua"),
+                                               tr("More than one path for Gregorio has been found:\n"
+                                                  "already scanned: %1\n"
+                                                  "newly discovered: %2\n"
+                                                  "Do you want to use the newly discovered path instead?")
+                    .arg(Gregorio_Path)
+                    .arg(where_are_you.fileInfo().canonicalPath()),
+                    QMessageBox::Yes|QMessageBox::No) == QMessageBox::Yes) Gregorio_Path = where_are_you.fileInfo().canonicalPath();
+            }
+
+
+        }
+#endif
+#if defined Q_WS_WIN | defined __MINGW32__
     QDirIterator where_are_you("C:/",QDir::Files,QDirIterator::Subdirectories);
     while (where_are_you.hasNext())
     {
@@ -723,11 +770,15 @@ void NaProg::on_actionInitialisierung_triggered()
 
 void NaProg::on_actionClef_triggered()
 {
-    NAClefSelect* clefchoice = new NAClefSelect;
+    QString retclef;
+    NAClefSelect clefchoice;
     if (activeMdiChild())
     {
-      clefchoice->exec();
-      activeMdiChild()->append(clefchoice->clefS);
+      if( clefchoice.exec() == QDialog::Accepted )
+        {
+          retclef = clefchoice.clefS;
+        }
     }
     else error_noopenfile();
+    if (!retclef.isEmpty()) activeMdiChild()->append(retclef);
 }

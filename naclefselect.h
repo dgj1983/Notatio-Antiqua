@@ -2,7 +2,6 @@
 #define NACLEFSELECT_H
 
 #include <QDialog>
-#include "naprog.h"
 namespace Ui {
     class NAClefSelect;
 }

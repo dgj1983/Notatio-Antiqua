@@ -86,7 +86,6 @@ private slots:
     void on_actionGregorioTeX_PDF_triggered();
     void on_actionLyTeX_PDF_triggered();
     void on_actionLaTeX_PDF_triggered();
-    void on_actionSchlie_en_triggered();
     void on_actionSpeichern_unter_triggered();
     void on_actionSpeichern_triggered();
     void on_action_ffnen_triggered();
