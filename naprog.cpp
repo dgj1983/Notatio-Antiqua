@@ -504,7 +504,8 @@ void NaProg::gregorio_prepare()
 {
   QFileInfo openfile(activeMdiChild()->curFile);
   QMessageBox::question(this,tr("Notatio Antiqua"),tr("Please select a template for the creation of the PDF file."),QMessageBox::Ok);
-  QString tmplName = QFileDialog::getOpenFileName(this);
+  QString tmplName = QFileDialog::getOpenFileName(this,tr("Open Template"),"",
+                                                  "Notatio Antiqua Template (*.natemplate)");
   QString gabcName = openfile.fileName();
   QString outputName = openfile.absolutePath()+"/"+openfile.baseName()+"-main.tex";
   QFile tmpl(tmplName);
