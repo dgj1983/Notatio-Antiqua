@@ -22,9 +22,9 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 LicenseFile=C:\Documents and Settings\Administrator\My Documents\notantiq\gpl.txt
-InfoBeforeFile=C:\Documents and Settings\Administrator\My Documents\notantiq\windows\innosetup\welcome.txt
-InfoAfterFile=C:\Documents and Settings\Administrator\My Documents\notantiq\windows\innosetup\finished.txt
-OutputDir=C:\Documents and Settings\Administrator\My Documents\notantiq\windows\innosetup\setup
+InfoBeforeFile=C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\innosetup\welcome.txt
+InfoAfterFile=C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\innosetup\finished.txt
+OutputDir=C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\innosetup\setup
 OutputBaseFilename=notantiq-setup-0.7b
 SetupIconFile=C:\Documents and Settings\Administrator\My Documents\notantiq\images\notantiq.ico
 Compression=lzma/Max
@@ -45,18 +45,18 @@ Source: "C:\Documents and Settings\Administrator\My Documents\notantiq\NaProg-de
 Source: "C:\Documents and Settings\Administrator\My Documents\notantiq\NaProg-en.qm"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Documents and Settings\Administrator\My Documents\notantiq\NaProg-fr.qm"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Documents and Settings\Administrator\My Documents\notantiq\help\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Documents and Settings\Administrator\My Documents\notantiq\templates\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\templates\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
-Source: C:\Documents and Settings\Administrator\My Documents\notantiq\windows\dlls\mingwm10.dll; DestDir: {sys}; Flags: promptifolder onlyifdoesntexist confirmoverwrite; 
-Source: C:\Documents and Settings\Administrator\My Documents\notantiq\windows\dlls\libgcc_s_dw2-1.dll; DestDir: {sys}; Flags: confirmoverwrite promptifolder onlyifdoesntexist; 
-Source: C:\Documents and Settings\Administrator\My Documents\notantiq\windows\dlls\QtCore4.dll; DestDir: {sys}; Flags: confirmoverwrite promptifolder onlyifdoesntexist; 
-Source: C:\Documents and Settings\Administrator\My Documents\notantiq\windows\dlls\QtGui4.dll; DestDir: {sys}; Flags: confirmoverwrite promptifolder onlyifdoesntexist; 
+Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\dlls\mingwm10.dll; DestDir: {sys}; Flags: promptifolder onlyifdoesntexist confirmoverwrite; 
+Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\dlls\libgcc_s_dw2-1.dll; DestDir: {sys}; Flags: confirmoverwrite promptifolder onlyifdoesntexist; 
+Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\dlls\QtCore4.dll; DestDir: {sys}; Flags: confirmoverwrite promptifolder onlyifdoesntexist; 
+Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\dlls\QtGui4.dll; DestDir: {sys}; Flags: confirmoverwrite promptifolder onlyifdoesntexist; 
 Source: C:\Documents and Settings\Administrator\My Documents\notantiq\images\notantiq.ico; DestDir: {app}; 
-Source: C:\Documents and Settings\Administrator\My Documents\notantiq\windows\font\Ubuntu-B.ttf; DestDir: {fonts}; Flags: promptifolder onlyifdoesntexist; 
-Source: C:\Documents and Settings\Administrator\My Documents\notantiq\windows\font\Ubuntu-BI.ttf; DestDir: {fonts}; Flags: promptifolder onlyifdoesntexist; 
-Source: C:\Documents and Settings\Administrator\My Documents\notantiq\windows\font\Ubuntu-I.ttf; DestDir: {fonts}; Flags: promptifolder onlyifdoesntexist; 
-Source: C:\Documents and Settings\Administrator\My Documents\notantiq\windows\font\Ubuntu-R.ttf; DestDir: {fonts}; Flags: promptifolder onlyifdoesntexist; 
+Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\font\Ubuntu-B.ttf; DestDir: {fonts}; Flags: promptifolder onlyifdoesntexist; 
+Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\font\Ubuntu-BI.ttf; DestDir: {fonts}; Flags: promptifolder onlyifdoesntexist; 
+Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\font\Ubuntu-I.ttf; DestDir: {fonts}; Flags: promptifolder onlyifdoesntexist; 
+Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\font\Ubuntu-R.ttf; DestDir: {fonts}; Flags: promptifolder onlyifdoesntexist; 
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
