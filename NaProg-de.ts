@@ -77,7 +77,7 @@ Would you like to save these changes?</source>
     <message>
         <location filename="nahelp.ui" line="14"/>
         <source>Hilfe</source>
-        <translation>HIlfe</translation>
+        <translation>Hilfe</translation>
     </message>
     <message utf8="true">
         <location filename="nahelp.ui" line="42"/>
@@ -275,7 +275,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="nahelp.ui" line="140"/>
         <source>file:///Users/dg/Documents/Programmierung/C++/NotAntiq/help/helpindex-de.html</source>
-        <translation>file:///Users/dg/Documents/Programmierung/C++/NotAntiq/help/helpindex-de.html</translation>
+        <translation>file://help/helpindex-de.html</translation>
     </message>
 </context>
 <context>
@@ -339,20 +339,6 @@ p, li { white-space: pre-wrap; }
         <location filename="nasettings.ui" line="216"/>
         <source>Lilypond</source>
         <translation>Lilypond</translation>
-    </message>
-</context>
-<context>
-    <name>NaCmd</name>
-    <message>
-        <source>Form</source>
-        <translation type="obsolete">Form</translation>
-    </message>
-</context>
-<context>
-    <name>NaLog</name>
-    <message>
-        <source>Dialog</source>
-        <translation type="obsolete">Dialog</translation>
     </message>
 </context>
 <context>
@@ -564,7 +550,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="naprog.ui" line="429"/>
         <source>Reopen</source>
-        <translation>E&amp;rneut öffnen</translation>
+        <translation>Erneut öffnen</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="432"/>
@@ -733,7 +719,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="naprog.ui" line="595"/>
         <source>Initialize Notatio Antiqua (searching application paths &amp;c)</source>
-        <translation>Notatio Antiqua initialisieren (Anwendungspfade suchen etc.)</translation>
+        <translation>Notatio Antiqua initialisieren (Anwendungspfade suchen &amp;c)</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="598"/>
@@ -891,127 +877,143 @@ p, li { white-space: pre-wrap; }
         <translation>Ctrl+Alt+C</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="59"/>
+        <location filename="naprog.cpp" line="67"/>
         <source>Copyright-Informationen</source>
         <translation>Copyright-Informationen</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="60"/>
+        <location filename="naprog.cpp" line="68"/>
         <source>&lt;h1&gt;Notatio Antiqua 0.7&amp;szlig;&lt;/h1&gt;&amp;copy; 2009-2010 DGSOFTWARE&lt;br /&gt;&lt;br /&gt;David Gippner M.A.&lt;br /&gt;Hans-Berger-Stra&amp;szlig;e 20&lt;br /&gt;07747 Jena&lt;br /&gt;&lt;a href=&apos;mailto:davidgippner@googlemail.com&apos;&gt;davidgippner@googlemail.com&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&lt;br /&gt; This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;a href=http://www.gnu.org/licenses/&gt;http://www.gnu.org/licenses/&lt;/a&gt;.</source>
         <oldsource>&lt;h1&gt;Notatio Antiqua 0.7&amp;szlig;&lt;/h1&gt;&amp;copy; 2009-2010 DGSOFTWARE&lt;br /&gt;&lt;br /&gt;David Gippner M.A.&lt;br /&gt;Hans-Berger-Stra&amp;szlig;e 20&lt;br /&gt;07747 Jena&lt;br /&gt;&lt;a href=&apos;mailto:davidgippner@googlemail.com&apos;&gt;davidgippner@googlemail.com&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Dieses Programm ist freie Software. Sie k&amp;ouml;nnen es unter den Bedingungen der GNU General Public License,wie von der Free Software Foundation ver&amp;ouml;ffentlicht, weitergeben und/oder modifizieren, entweder gem&amp;auml;&amp;szlig; Version 3 der Lizenz oder (nach Ihrer Option) jeder sp&amp;auml;teren Version.&lt;br /&gt;&lt;br /&gt;Die Ver&amp;ouml;ffentlichung dieses Programms erfolgt in der Hoffnung, da&amp;szlig; es Ihnen von Nutzen sein wird,aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT F&amp;Uuml;R EINEN BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License.&lt;br /&gt;&lt;br /&gt;Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Programm erhalten haben.Falls nicht, siehe &lt;a href=&apos;http://www.gnu.org/licenses/&apos;&gt;http://www.gnu.org/licenses/&lt;/a&gt;.</oldsource>
         <translation>&lt;h1&gt;Notatio Antiqua 0.7&amp;szlig;&lt;/h1&gt;&amp;copy; 2009-2010 DGSOFTWARE&lt;br /&gt;&lt;br /&gt;David Gippner M.A.&lt;br /&gt;Hans-Berger-Stra&amp;szlig;e 20&lt;br /&gt;07747 Jena&lt;br /&gt;&lt;a href=&apos;mailto:davidgippner@googlemail.com&apos;&gt;davidgippner@googlemail.com&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Dieses Programm ist freie Software. Sie k&amp;ouml;nnen es unter den Bedingungen der GNU General Public License,wie von der Free Software Foundation ver&amp;ouml;ffentlicht, weitergeben und/oder modifizieren, entweder gem&amp;auml;&amp;szlig; Version 3 der Lizenz oder (nach Ihrer Option) jeder sp&amp;auml;teren Version.&lt;br /&gt;&lt;br /&gt;Die Ver&amp;ouml;ffentlichung dieses Programms erfolgt in der Hoffnung, da&amp;szlig; es Ihnen von Nutzen sein wird,aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT F&amp;Uuml;R EINEN BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License.&lt;br /&gt;&lt;br /&gt;Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Programm erhalten haben.Falls nicht, siehe &lt;a href=&apos;http://www.gnu.org/licenses/&apos;&gt;http://www.gnu.org/licenses/&lt;/a&gt;.</translation>
     </message>
     <message>
-        <source>Datei Ã¶ffnen</source>
-        <translation type="obsolete">Datei öffnen</translation>
-    </message>
-    <message>
-        <source>Ãffnen abgeschlossen.</source>
-        <translation type="obsolete">Öffnen abgeschlossen</translation>
-    </message>
-    <message>
-        <location filename="naprog.cpp" line="140"/>
-        <location filename="naprog.cpp" line="489"/>
-        <location filename="naprog.cpp" line="569"/>
-        <location filename="naprog.cpp" line="575"/>
+        <location filename="naprog.cpp" line="148"/>
+        <location filename="naprog.cpp" line="504"/>
+        <location filename="naprog.cpp" line="585"/>
         <location filename="naprog.cpp" line="591"/>
-        <location filename="naprog.cpp" line="604"/>
-        <location filename="naprog.cpp" line="618"/>
-        <location filename="naprog.cpp" line="642"/>
-        <location filename="naprog.cpp" line="655"/>
+        <location filename="naprog.cpp" line="606"/>
+        <location filename="naprog.cpp" line="619"/>
+        <location filename="naprog.cpp" line="633"/>
+        <location filename="naprog.cpp" line="656"/>
         <location filename="naprog.cpp" line="669"/>
-        <location filename="naprog.cpp" line="693"/>
+        <location filename="naprog.cpp" line="683"/>
+        <location filename="naprog.cpp" line="706"/>
+        <location filename="naprog.cpp" line="719"/>
+        <location filename="naprog.cpp" line="733"/>
+        <location filename="naprog.cpp" line="757"/>
         <source>Notatio Antiqua</source>
         <translation>Notatio Antiqua</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="91"/>
+        <location filename="naprog.cpp" line="99"/>
         <source>Open File</source>
         <translation>Öffne Datei</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="104"/>
-        <location filename="naprog.cpp" line="127"/>
+        <location filename="naprog.cpp" line="112"/>
+        <location filename="naprog.cpp" line="135"/>
         <source>File opened.</source>
         <translation>Datei geöffnet.</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="141"/>
+        <location filename="naprog.cpp" line="149"/>
         <source>&apos;%1&apos; will be reopened.
 Do you really want to revert it to the last saved state?</source>
         <translation>&apos;%1&apos; wird erneut geöffnet.\n Wollen Sie wirklich alle Änderungen seit dem letzten Speichern verlieren?</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="156"/>
+        <location filename="naprog.cpp" line="164"/>
         <source>File reopened.</source>
         <translation>Datei erneut geöffnet.</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="171"/>
-        <location filename="naprog.cpp" line="177"/>
+        <location filename="naprog.cpp" line="179"/>
+        <location filename="naprog.cpp" line="185"/>
         <source>Saved.</source>
         <translation>Gespeichert.</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="304"/>
+        <location filename="naprog.cpp" line="288"/>
         <source>Program output</source>
         <translation>Programmausgabe</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="314"/>
+        <location filename="naprog.cpp" line="298"/>
         <source>Notatio Antiqua 0.7 beta</source>
         <translation>Notatio Antiqua 0.7 beta (deutsch)</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="489"/>
+        <location filename="naprog.cpp" line="504"/>
         <source>Please select a template for the creation of the PDF file.</source>
         <translation>Bitte wählen Sie eine Vorlage für die Erstellung der PDF aus.</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="570"/>
+        <location filename="naprog.cpp" line="505"/>
+        <source>Open Template</source>
+        <translation>Öffne Vorlage</translation>
+    </message>
+    <message>
+        <location filename="naprog.cpp" line="586"/>
         <source>No document window open, you can&apos;t run the desired action.</source>
         <translation>Kein Dokumentenfenster geöffnet, die gewünschte Aktion kann nicht ausgeführt werden.</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="576"/>
+        <location filename="naprog.cpp" line="592"/>
         <source>Initializing the paths for LaTeX, Lilypond and Gregorio. This can take a while, please be patient.</source>
         <translation>Initialisierung der Pfade für LaTeX, Lilypond und Gregorio. Dies kann eine Weile dauern, bitte haben Sie Geduld.</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="592"/>
-        <location filename="naprog.cpp" line="643"/>
+        <location filename="naprog.cpp" line="607"/>
+        <location filename="naprog.cpp" line="657"/>
+        <location filename="naprog.cpp" line="707"/>
         <source>More than one path for LaTeX has been found:
 already scanned: %1
 newly discovered: %2
 Do you want to use the newly discovered path instead?</source>
-        <translation>Mehr als ein Pfad für LaTeX wurde gefunden: \n bereits gescannt: %1\n neu gefunden: %2\n Wollen Sie statt dem bereits gefundenen den neueren Pfad verwenden?</translation>
+        <translation>Mehr als ein Pfad für LaTeX wurde gefunden:
+ bereits gescannt: %1
+ neu gefunden: %2
+ Wollen Sie statt dem bereits gefundenen den neueren Pfad verwenden?</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="605"/>
-        <location filename="naprog.cpp" line="656"/>
+        <location filename="naprog.cpp" line="620"/>
+        <location filename="naprog.cpp" line="670"/>
+        <location filename="naprog.cpp" line="720"/>
         <source>More than one path for LilyPond has been found:
 already scanned: %1
 newly discovered: %2
 Do you want to use the newly discovered path instead?</source>
-        <translation>Mehr als ein Pfad für LilyPond wurde gefunden: \n bereits gescannt: %1\n neu gefunden: %2\n Wollen Sie statt dem bereits gefundenen den neueren Pfad verwenden?</translation>
+        <translation>Mehr als ein Pfad für LilyPond wurde gefunden:
+bereits gescannt: %1
+neu gefunden: %2
+Wollen Sie statt dem bereits gefundenen den neueren Pfad verwenden?</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="619"/>
-        <location filename="naprog.cpp" line="670"/>
+        <location filename="naprog.cpp" line="634"/>
+        <location filename="naprog.cpp" line="684"/>
+        <location filename="naprog.cpp" line="734"/>
         <source>More than one path for Gregorio has been found:
 already scanned: %1
 newly discovered: %2
 Do you want to use the newly discovered path instead?</source>
-        <translation>Mehr als ein Pfad für Gregorio wurde gefunden: \n bereits gescannt: %1\n neu gefunden: %2\n Wollen Sie statt dem bereits gefundenen den neueren Pfad verwenden?</translation>
+        <translation>Mehr als ein Pfad für Gregorio wurde gefunden:
+bereits gescannt: %1
+neu gefunden: %2
+Wollen Sie statt dem bereits gefundenen den neueren Pfad verwenden?</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="694"/>
+        <location filename="naprog.cpp" line="758"/>
         <source>The following paths have been found and have been written to ini file:
  LuaLaTeX: %1
  Lilypond: %2
  Gregorio: %3.
 If these paths do not meet your standard installations, you can alter them in Extras-&gt;Options or run this initialization again.</source>
-        <translation>Die folgenden Pfade wurden gefunden und wurden in die Ini-Datei eingetragen:\n  LuaLaTeX: %1\n Lilypond: %2\n Gregorio: %3.\n Wenn diese Pfade nicht Ihrer Standardkonfiguration entsprechen, können Sie sie manuell unter Extras-&gt;Optionen ändern oder diese Initialisierung erneut ausführen.</translation>
+        <translation>Die folgenden Pfade wurden gefunden und in die Ini-Datei eingetragen:
+LuaLaTeX: %1
+Lilypond: %2
+Gregorio: %3.
+Wenn diese Pfade nicht Ihrer Standardinstallation entsprechen oder sie sich geändert haben, können Sie sie unter Extras-&gt;Optionen ändern oder diese Initialisierung erneut ausführen.</translation>
     </message>
 </context>
 </TS>

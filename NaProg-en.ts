@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.0" language="en">
 <context>
     <name>MdiChild</name>
     <message>
@@ -44,7 +44,7 @@ Would you like to save these changes?</source>
     <message>
         <location filename="naclefselect.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Clef selection</translation>
     </message>
     <message>
         <location filename="naclefselect.ui" line="65"/>
@@ -69,7 +69,7 @@ Would you like to save these changes?</source>
     <message>
         <location filename="naclefselect.ui" line="120"/>
         <source>Pitch</source>
-        <translation type="unfinished"></translation>
+        <translation>Pitch</translation>
     </message>
 </context>
 <context>
@@ -77,7 +77,7 @@ Would you like to save these changes?</source>
     <message>
         <location filename="nahelp.ui" line="14"/>
         <source>Hilfe</source>
-        <translation type="unfinished"></translation>
+        <translation>Help</translation>
     </message>
     <message utf8="true">
         <location filename="nahelp.ui" line="42"/>
@@ -181,7 +181,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="nahelp.ui" line="140"/>
         <source>file:///Users/dg/Documents/Programmierung/C++/NotAntiq/help/helpindex-de.html</source>
-        <translation type="unfinished"></translation>
+        <translation>file://help/helpindex-en.html</translation>
     </message>
 </context>
 <context>
@@ -189,7 +189,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="nasettings.ui" line="14"/>
         <source>Einstellungen</source>
-        <translation type="unfinished"></translation>
+        <translation>Preferences</translation>
     </message>
     <message>
         <location filename="nasettings.ui" line="71"/>
@@ -199,12 +199,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="nasettings.ui" line="102"/>
         <source>Standardschrift</source>
-        <translation type="unfinished"></translation>
+        <translation>Standard font</translation>
     </message>
     <message>
         <location filename="nasettings.ui" line="108"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>Advanced</translation>
     </message>
     <message>
         <location filename="nasettings.ui" line="113"/>
@@ -219,7 +219,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="nasettings.ui" line="148"/>
         <source>LaTeX binaries-Pfad</source>
-        <translation type="unfinished"></translation>
+        <translation>/path/to/latex</translation>
     </message>
     <message>
         <location filename="nasettings.ui" line="161"/>
@@ -229,7 +229,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="nasettings.ui" line="177"/>
         <source>Gregorio-Pfad</source>
-        <translation type="unfinished"></translation>
+        <translation>/path/to/gregorio</translation>
     </message>
     <message>
         <location filename="nasettings.ui" line="190"/>
@@ -239,7 +239,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="nasettings.ui" line="203"/>
         <source>Lilypond-Pfad</source>
-        <translation type="unfinished"></translation>
+        <translation>/path/to/lilypond</translation>
     </message>
     <message>
         <location filename="nasettings.ui" line="216"/>
@@ -456,7 +456,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="naprog.ui" line="429"/>
         <source>Reopen</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="naprog.ui" line="432"/>
@@ -783,87 +783,96 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="59"/>
+        <location filename="naprog.cpp" line="67"/>
         <source>Copyright-Informationen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="60"/>
+        <location filename="naprog.cpp" line="68"/>
         <source>&lt;h1&gt;Notatio Antiqua 0.7&amp;szlig;&lt;/h1&gt;&amp;copy; 2009-2010 DGSOFTWARE&lt;br /&gt;&lt;br /&gt;David Gippner M.A.&lt;br /&gt;Hans-Berger-Stra&amp;szlig;e 20&lt;br /&gt;07747 Jena&lt;br /&gt;&lt;a href=&apos;mailto:davidgippner@googlemail.com&apos;&gt;davidgippner@googlemail.com&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&lt;br /&gt; This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;a href=http://www.gnu.org/licenses/&gt;http://www.gnu.org/licenses/&lt;/a&gt;.</source>
         <oldsource>&lt;h1&gt;Notatio Antiqua 0.7&amp;szlig;&lt;/h1&gt;&amp;copy; 2009-2010 DGSOFTWARE&lt;br /&gt;&lt;br /&gt;David Gippner M.A.&lt;br /&gt;Hans-Berger-Stra&amp;szlig;e 20&lt;br /&gt;07747 Jena&lt;br /&gt;&lt;a href=&apos;mailto:davidgippner@googlemail.com&apos;&gt;davidgippner@googlemail.com&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Dieses Programm ist freie Software. Sie k&amp;ouml;nnen es unter den Bedingungen der GNU General Public License,wie von der Free Software Foundation ver&amp;ouml;ffentlicht, weitergeben und/oder modifizieren, entweder gem&amp;auml;&amp;szlig; Version 3 der Lizenz oder (nach Ihrer Option) jeder sp&amp;auml;teren Version.&lt;br /&gt;&lt;br /&gt;Die Ver&amp;ouml;ffentlichung dieses Programms erfolgt in der Hoffnung, da&amp;szlig; es Ihnen von Nutzen sein wird,aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT F&amp;Uuml;R EINEN BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License.&lt;br /&gt;&lt;br /&gt;Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Programm erhalten haben.Falls nicht, siehe &lt;a href=&apos;http://www.gnu.org/licenses/&apos;&gt;http://www.gnu.org/licenses/&lt;/a&gt;.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="140"/>
-        <location filename="naprog.cpp" line="489"/>
-        <location filename="naprog.cpp" line="569"/>
-        <location filename="naprog.cpp" line="575"/>
-        <location filename="naprog.cpp" line="590"/>
-        <location filename="naprog.cpp" line="603"/>
-        <location filename="naprog.cpp" line="617"/>
-        <location filename="naprog.cpp" line="640"/>
-        <location filename="naprog.cpp" line="653"/>
-        <location filename="naprog.cpp" line="667"/>
-        <location filename="naprog.cpp" line="691"/>
+        <location filename="naprog.cpp" line="148"/>
+        <location filename="naprog.cpp" line="504"/>
+        <location filename="naprog.cpp" line="585"/>
+        <location filename="naprog.cpp" line="591"/>
+        <location filename="naprog.cpp" line="606"/>
+        <location filename="naprog.cpp" line="619"/>
+        <location filename="naprog.cpp" line="633"/>
+        <location filename="naprog.cpp" line="656"/>
+        <location filename="naprog.cpp" line="669"/>
+        <location filename="naprog.cpp" line="683"/>
+        <location filename="naprog.cpp" line="706"/>
+        <location filename="naprog.cpp" line="719"/>
+        <location filename="naprog.cpp" line="733"/>
+        <location filename="naprog.cpp" line="757"/>
         <source>Notatio Antiqua</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="91"/>
+        <location filename="naprog.cpp" line="99"/>
         <source>Open File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="104"/>
-        <location filename="naprog.cpp" line="127"/>
+        <location filename="naprog.cpp" line="112"/>
+        <location filename="naprog.cpp" line="135"/>
         <source>File opened.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="141"/>
+        <location filename="naprog.cpp" line="149"/>
         <source>&apos;%1&apos; will be reopened.
 Do you really want to revert it to the last saved state?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="156"/>
+        <location filename="naprog.cpp" line="164"/>
         <source>File reopened.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="171"/>
-        <location filename="naprog.cpp" line="177"/>
+        <location filename="naprog.cpp" line="179"/>
+        <location filename="naprog.cpp" line="185"/>
         <source>Saved.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="304"/>
+        <location filename="naprog.cpp" line="288"/>
         <source>Program output</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="314"/>
+        <location filename="naprog.cpp" line="298"/>
         <source>Notatio Antiqua 0.7 beta</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="489"/>
+        <location filename="naprog.cpp" line="504"/>
         <source>Please select a template for the creation of the PDF file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="570"/>
+        <location filename="naprog.cpp" line="505"/>
+        <source>Open Template</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="naprog.cpp" line="586"/>
         <source>No document window open, you can&apos;t run the desired action.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="576"/>
+        <location filename="naprog.cpp" line="592"/>
         <source>Initializing the paths for LaTeX, Lilypond and Gregorio. This can take a while, please be patient.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="591"/>
-        <location filename="naprog.cpp" line="641"/>
+        <location filename="naprog.cpp" line="607"/>
+        <location filename="naprog.cpp" line="657"/>
+        <location filename="naprog.cpp" line="707"/>
         <source>More than one path for LaTeX has been found:
 already scanned: %1
 newly discovered: %2
@@ -871,8 +880,9 @@ Do you want to use the newly discovered path instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="604"/>
-        <location filename="naprog.cpp" line="654"/>
+        <location filename="naprog.cpp" line="620"/>
+        <location filename="naprog.cpp" line="670"/>
+        <location filename="naprog.cpp" line="720"/>
         <source>More than one path for LilyPond has been found:
 already scanned: %1
 newly discovered: %2
@@ -880,8 +890,9 @@ Do you want to use the newly discovered path instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="618"/>
-        <location filename="naprog.cpp" line="668"/>
+        <location filename="naprog.cpp" line="634"/>
+        <location filename="naprog.cpp" line="684"/>
+        <location filename="naprog.cpp" line="734"/>
         <source>More than one path for Gregorio has been found:
 already scanned: %1
 newly discovered: %2
@@ -889,7 +900,7 @@ Do you want to use the newly discovered path instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="692"/>
+        <location filename="naprog.cpp" line="758"/>
         <source>The following paths have been found and have been written to ini file:
  LuaLaTeX: %1
  Lilypond: %2

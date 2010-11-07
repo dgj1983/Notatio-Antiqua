@@ -593,7 +593,6 @@ void NaProg::initialization()
     LaTeX_Path = ""; // Initialisierung der Variablen
     Lilypond_Path = "";
     Gregorio_Path = "";
-    // QDesktopServices::storageLocation(QDesktopServices::ApplicationsLocation
 #ifdef Q_WS_X11
     QDirIterator where_are_you("/usr",QDir::Files,QDirIterator::Subdirectories);
     while (where_are_you.hasNext())
