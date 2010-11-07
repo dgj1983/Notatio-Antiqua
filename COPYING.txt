@@ -20,3 +20,7 @@ finden Sie in der GNU General Public License.
 
 Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Programm erhalten haben (vgl. gpl.txt). Falls nicht,
 siehe <http://www.gnu.org/licenses/>.
+
+The Ubuntu font family included in this bundle is licensed with the Ubuntu Font Licence V. 1.0
+You can find this license in this directory under ufl.txt or under http://font.ubuntu.com/ufl/ubuntu-font-licence-1.0.txt.
+
