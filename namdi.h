@@ -13,7 +13,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 #include <QTextEdit>
 #include <QSettings>
 #include "nasyntax.h"
-#include "naprog.h"
+// #include "naprog.h"
 
 class MdiChild : public QTextEdit
 {

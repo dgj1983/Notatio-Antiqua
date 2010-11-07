@@ -278,12 +278,6 @@ void NaProg::updateMenus()
 
 }
 
-void NaProg::on_actionSchlie_en_triggered()
-{
-    activeMdiChild()->close();
-      setWindowTitle("Notatio Antiqua");
-}
-
 void NaProg::createWorkspaces()
 {
     connect(ui->actionBeenden, SIGNAL(triggered()), qApp, SLOT(closeAllWindows()));
@@ -381,7 +375,8 @@ void NaProg::on_actionPDF_ansehen_triggered()
 
 void NaProg::on_actionEinstellungen_2_triggered()
 {
-  NASettings* settingsdlg = new NASettings;
+    NASettings* settingsdlg = new NASettings;
+  settingsdlg->setModal(true);
   settingsdlg->show();
 }
 
@@ -449,8 +444,10 @@ void NaProg::gregorio_extract()
               hi.mode = element.section(":",1,1).simplified();
 
          if (element.contains("annotation:"))
+         {
               if (hi.annotation1.isEmpty()) hi.annotation1 = element.section(":",1,1).simplified();
               else hi.annotation2 = element.section(":",1,1).simplified();
+         }
 
          if (element.contains("commentary:"))
               hi.commentary = element.section(":",1,1).simplified();
@@ -772,11 +769,15 @@ void NaProg::on_actionInitialisierung_triggered()
 
 void NaProg::on_actionClef_triggered()
 {
-    NAClefSelect* clefchoice = new NAClefSelect;
+    QString retclef;
+    NAClefSelect clefchoice;
     if (activeMdiChild())
     {
-      clefchoice->exec();
-      activeMdiChild()->append(clefchoice->clefS);
+      if( clefchoice.exec() == QDialog::Accepted )
+        {
+          retclef = clefchoice.clefS;
+        }
     }
     else error_noopenfile();
+    if (!retclef.isEmpty()) activeMdiChild()->append(retclef);
 }
