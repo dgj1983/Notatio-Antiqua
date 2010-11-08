@@ -166,6 +166,17 @@
     <property name="title">
      <string>Window</string>
     </property>
+    <addaction name="actionTile"/>
+    <addaction name="actionCascade"/>
+    <addaction name="separator"/>
+    <addaction name="action_Next_Window"/>
+    <addaction name="action_Previous_Window"/>
+    <addaction name="separator"/>
+    <addaction name="actionMaximize"/>
+    <addaction name="actionRestore"/>
+    <addaction name="actionClose"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose_All"/>
    </widget>
    <widget class="QMenu" name="menuHilfe">
     <property name="locale">
@@ -207,8 +218,8 @@
    <addaction name="menuBearbeiten"/>
    <addaction name="menuEinf_gen"/>
    <addaction name="menuErstellen"/>
-   <addaction name="menuFenster"/>
    <addaction name="menuEinstellungen"/>
+   <addaction name="menuFenster"/>
    <addaction name="menuHilfe"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
@@ -746,10 +757,179 @@
     <string>Ctrl+Alt+C</string>
    </property>
   </action>
+  <action name="actionTile">
+   <property name="text">
+    <string>Tile</string>
+   </property>
+  </action>
+  <action name="actionCascade">
+   <property name="text">
+    <string>Cascade</string>
+   </property>
+  </action>
+  <action name="action_Next_Window">
+   <property name="text">
+    <string>&gt; Next Window</string>
+   </property>
+  </action>
+  <action name="action_Previous_Window">
+   <property name="text">
+    <string>&lt; Previous Window</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionClose_All">
+   <property name="text">
+    <string>Close &amp;All</string>
+   </property>
+  </action>
+  <action name="actionMaximize">
+   <property name="text">
+    <string>Maximize</string>
+   </property>
+  </action>
+  <action name="actionRestore">
+   <property name="text">
+    <string>Restore</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
   <include location="naprog.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>actionClose</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>closeActiveSubWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionClose_All</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>closeAllSubWindows()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTile</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>tileSubWindows()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCascade</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>cascadeSubWindows()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Next_Window</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>activateNextSubWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Previous_Window</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>activatePreviousSubWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionMaximize</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>showMaximized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRestore</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>showNormal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
