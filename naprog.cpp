@@ -778,5 +778,7 @@ void NaProg::on_actionClef_triggered()
         }
     }
     else error_noopenfile();
-    if (!retclef.isEmpty()) activeMdiChild()->append(retclef);
+    if (!retclef.isEmpty())
+        if(activeMdiChild())
+            activeMdiChild()->append(retclef);
 }
