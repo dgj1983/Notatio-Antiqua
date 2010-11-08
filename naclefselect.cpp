@@ -1,4 +1,3 @@
-#include <QtDebug>
 #include "naclefselect.h"
 #include "ui_naclefselect.h"
 
@@ -7,7 +6,6 @@ NAClefSelect::NAClefSelect(QWidget *parent) :
     ui(new Ui::NAClefSelect)
 {
     ui->setupUi(this);
-    connect(ui->buttonBox,SIGNAL(accepted()),this,SLOT(on_NAClefSelect_accepted()));
 }
 
 NAClefSelect::~NAClefSelect()
