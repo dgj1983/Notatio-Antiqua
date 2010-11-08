@@ -19,7 +19,7 @@ private:
     Ui::NAClefSelect *ui;
 
 private slots:
-    void on_NAClefSelect_accepted();
+    void on_buttonBox_accepted();
 };
 
 #endif // NACLEFSELECT_H

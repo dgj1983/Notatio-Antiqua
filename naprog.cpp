@@ -23,7 +23,6 @@ NaProg::NaProg(QWidget *parent) :
 {
     ui->setupUi(this);
     createWorkspaces();
-    neu();
 }
 
 

@@ -20,6 +20,8 @@ SOURCES += main.cpp \
            naprog.cpp \
            nasettings.cpp \
            nasyntax.cpp
+RC_FILE += notantiq-w32.rc
+ICON += notantiq.icns
 RESOURCES += naprog.qrc
 TRANSLATIONS += NaProg-de.ts \
                 NaProg-en.ts \
