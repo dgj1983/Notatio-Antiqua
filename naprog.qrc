@@ -18,7 +18,7 @@
         <file>images/utilities.png</file>
         <file>images/clean.png</file>
         <file>help/helpindex-de.html</file>
-        <file>images/notantiq.icns</file>
-        <file>images/notantiq.ico</file>
+        <file>notantiq.icns</file>
+        <file>notantiq.ico</file>
     </qresource>
 </RCC>
