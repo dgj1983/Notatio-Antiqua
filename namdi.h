@@ -54,7 +54,6 @@ Based on MDI Application Example
 #include <QTextEdit>
 #include <QSettings>
 #include "nasyntax.h"
-// #include "naprog.h"
 
 class MdiChild : public QTextEdit
 {

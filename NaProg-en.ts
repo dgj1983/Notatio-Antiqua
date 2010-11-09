@@ -295,584 +295,624 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="175"/>
-        <location filename="naprog.ui" line="300"/>
-        <location filename="naprog.ui" line="303"/>
+        <location filename="naprog.ui" line="186"/>
+        <location filename="naprog.ui" line="311"/>
+        <location filename="naprog.ui" line="314"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="185"/>
+        <location filename="naprog.ui" line="196"/>
         <source>E&amp;xtras</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="196"/>
+        <location filename="naprog.ui" line="207"/>
         <source>Process</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="220"/>
+        <location filename="naprog.ui" line="231"/>
         <source>toolBar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="246"/>
+        <location filename="naprog.ui" line="257"/>
         <source>toolBar_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="271"/>
+        <location filename="naprog.ui" line="282"/>
         <source>toolBar_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="naprog.ui" line="274"/>
+        <location filename="naprog.ui" line="285"/>
         <source>Ein Click auf diesen Button wandelt eine vorhandene GABC-Datei in eine PDF um (Mit Umweg über LuaLaTeX)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="306"/>
+        <location filename="naprog.ui" line="317"/>
         <source>F1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="315"/>
-        <location filename="naprog.ui" line="318"/>
+        <location filename="naprog.ui" line="326"/>
+        <location filename="naprog.ui" line="329"/>
         <source>About Notatio Antiqua</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="321"/>
+        <location filename="naprog.ui" line="332"/>
         <source>F13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="330"/>
+        <location filename="naprog.ui" line="341"/>
         <source>Options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="333"/>
+        <location filename="naprog.ui" line="344"/>
         <source>Editor settings and environment settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="336"/>
+        <location filename="naprog.ui" line="347"/>
         <source>Ctrl+,</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="346"/>
+        <location filename="naprog.ui" line="357"/>
         <source>&amp;New</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="349"/>
+        <location filename="naprog.ui" line="360"/>
         <source>Neu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="352"/>
+        <location filename="naprog.ui" line="363"/>
         <source>Ctrl+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="361"/>
-        <location filename="naprog.ui" line="364"/>
+        <location filename="naprog.ui" line="372"/>
+        <location filename="naprog.ui" line="375"/>
         <source>Op&amp;en</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="naprog.ui" line="367"/>
+        <location filename="naprog.ui" line="378"/>
         <source>Öffnet eine Datei</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="370"/>
+        <location filename="naprog.ui" line="381"/>
         <source>Ctrl+E</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="379"/>
+        <location filename="naprog.ui" line="390"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="382"/>
+        <location filename="naprog.ui" line="393"/>
         <source>Save current document</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="385"/>
+        <location filename="naprog.ui" line="396"/>
         <source>Datei speichern</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="388"/>
+        <location filename="naprog.ui" line="399"/>
         <source>Ctrl+S</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="397"/>
+        <location filename="naprog.ui" line="408"/>
         <source>Save &amp;as</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="400"/>
+        <location filename="naprog.ui" line="411"/>
         <source>Save current document as...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="403"/>
+        <location filename="naprog.ui" line="414"/>
         <source>Datei unter anderem Namen speichern</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="406"/>
+        <location filename="naprog.ui" line="417"/>
         <source>Ctrl+A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="415"/>
+        <location filename="naprog.ui" line="426"/>
         <source>Print</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="418"/>
+        <location filename="naprog.ui" line="429"/>
         <source>Print source code</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="421"/>
+        <location filename="naprog.ui" line="432"/>
         <source>Quelltext drucken</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="424"/>
+        <location filename="naprog.ui" line="435"/>
         <source>Ctrl+P</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="429"/>
+        <location filename="naprog.ui" line="440"/>
         <source>Reopen</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="432"/>
+        <location filename="naprog.ui" line="443"/>
         <source>Reopen current document</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="435"/>
+        <location filename="naprog.ui" line="446"/>
         <source>Ctrl+R</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="447"/>
+        <location filename="naprog.ui" line="458"/>
         <source>Exit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="450"/>
+        <location filename="naprog.ui" line="461"/>
         <source>Quit Notatio Antiqua</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="naprog.ui" line="453"/>
+        <location filename="naprog.ui" line="464"/>
         <source>Notatio Antiqua schließen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="456"/>
+        <location filename="naprog.ui" line="467"/>
         <source>Ctrl+Q</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="465"/>
-        <location filename="naprog.ui" line="468"/>
+        <location filename="naprog.ui" line="476"/>
+        <location filename="naprog.ui" line="479"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="471"/>
+        <location filename="naprog.ui" line="482"/>
         <source>Ausschnitt kopieren</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="474"/>
+        <location filename="naprog.ui" line="485"/>
         <source>Ctrl+C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="483"/>
-        <location filename="naprog.ui" line="486"/>
+        <location filename="naprog.ui" line="494"/>
+        <location filename="naprog.ui" line="497"/>
         <source>Cut</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="489"/>
+        <location filename="naprog.ui" line="500"/>
         <source>Ausschneiden</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="492"/>
+        <location filename="naprog.ui" line="503"/>
         <source>Ctrl+X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="501"/>
-        <location filename="naprog.ui" line="504"/>
+        <location filename="naprog.ui" line="512"/>
+        <location filename="naprog.ui" line="515"/>
         <source>Paste</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="naprog.ui" line="507"/>
+        <location filename="naprog.ui" line="518"/>
         <source>Einfügen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="510"/>
+        <location filename="naprog.ui" line="521"/>
         <source>Ctrl+V</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="519"/>
+        <location filename="naprog.ui" line="530"/>
         <source>LaTeX-&gt;PDF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="522"/>
+        <location filename="naprog.ui" line="533"/>
         <source>LaTeX-Datei in PDF kompilieren</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="525"/>
+        <location filename="naprog.ui" line="536"/>
         <source>Ctrl+L</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="530"/>
+        <location filename="naprog.ui" line="541"/>
         <source>LyTeX-&gt;PDF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="533"/>
+        <location filename="naprog.ui" line="544"/>
         <source>Lilypond+LaTeX-Datei in PDF verwandeln</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="536"/>
+        <location filename="naprog.ui" line="547"/>
         <source>Ctrl+Y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="541"/>
+        <location filename="naprog.ui" line="552"/>
         <source>GregorioTeX-&gt;PDF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="544"/>
+        <location filename="naprog.ui" line="555"/>
         <source>gabc-&gt;GregorioTeX-&gt;PDF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="547"/>
+        <location filename="naprog.ui" line="558"/>
         <source>Ctrl+G</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="556"/>
+        <location filename="naprog.ui" line="567"/>
         <source>Clean up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="559"/>
+        <location filename="naprog.ui" line="570"/>
         <source>Clean up temporary files</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="naprog.ui" line="562"/>
+        <location filename="naprog.ui" line="573"/>
         <source>unnötige temporäre Dateien aufräumen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="565"/>
+        <location filename="naprog.ui" line="576"/>
         <source>Ctrl+T</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="574"/>
-        <location filename="naprog.ui" line="577"/>
+        <location filename="naprog.ui" line="585"/>
+        <location filename="naprog.ui" line="588"/>
         <source>View PDF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="580"/>
+        <location filename="naprog.ui" line="591"/>
         <source>erstellte PDF ansehen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="583"/>
+        <location filename="naprog.ui" line="594"/>
         <source>Ctrl+Shift+V</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="592"/>
+        <location filename="naprog.ui" line="603"/>
         <source>Initialize Notatio Antiqua</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="595"/>
+        <location filename="naprog.ui" line="606"/>
         <source>Initialize Notatio Antiqua (searching application paths &amp;c)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="598"/>
+        <location filename="naprog.ui" line="609"/>
         <source>Ctrl+Alt+Shift+I</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="603"/>
+        <location filename="naprog.ui" line="614"/>
         <source>Header Wizard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="608"/>
+        <location filename="naprog.ui" line="619"/>
         <source>c1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="613"/>
+        <location filename="naprog.ui" line="624"/>
         <source>c2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="618"/>
+        <location filename="naprog.ui" line="629"/>
         <source>c3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="623"/>
+        <location filename="naprog.ui" line="634"/>
         <source>c4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="628"/>
+        <location filename="naprog.ui" line="639"/>
         <source>f2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="633"/>
+        <location filename="naprog.ui" line="644"/>
         <source>f3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="638"/>
+        <location filename="naprog.ui" line="649"/>
         <source>f4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="643"/>
+        <location filename="naprog.ui" line="654"/>
         <source>c-clef</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="648"/>
+        <location filename="naprog.ui" line="659"/>
         <source>c-clef with b-molle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="653"/>
+        <location filename="naprog.ui" line="664"/>
         <source>f-clef</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="658"/>
+        <location filename="naprog.ui" line="669"/>
         <source>f-clef with b-molle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="663"/>
+        <location filename="naprog.ui" line="674"/>
         <source>Virgula</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="668"/>
+        <location filename="naprog.ui" line="679"/>
         <source>Quarter Bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="673"/>
+        <location filename="naprog.ui" line="684"/>
         <source>Half Bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="678"/>
+        <location filename="naprog.ui" line="689"/>
         <source>Double Bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="683"/>
+        <location filename="naprog.ui" line="694"/>
         <source>Dagger</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="688"/>
+        <location filename="naprog.ui" line="699"/>
         <source>Cross</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="693"/>
+        <location filename="naprog.ui" line="704"/>
         <source>Verse</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="698"/>
+        <location filename="naprog.ui" line="709"/>
         <source>Response</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="703"/>
+        <location filename="naprog.ui" line="714"/>
         <source>Antiphon</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="naprog.ui" line="708"/>
+        <location filename="naprog.ui" line="719"/>
         <source>Accented æ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="713"/>
+        <location filename="naprog.ui" line="724"/>
         <source>celeriter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="718"/>
+        <location filename="naprog.ui" line="729"/>
         <source>tenere</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="723"/>
+        <location filename="naprog.ui" line="734"/>
         <source>mediocriter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="728"/>
+        <location filename="naprog.ui" line="739"/>
         <source>non</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="733"/>
+        <location filename="naprog.ui" line="744"/>
         <source>exspecta</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="738"/>
+        <location filename="naprog.ui" line="749"/>
         <source>Dominican Bars</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="743"/>
+        <location filename="naprog.ui" line="754"/>
         <source>Clef</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.ui" line="746"/>
+        <location filename="naprog.ui" line="757"/>
         <source>Ctrl+Alt+C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="67"/>
+        <location filename="naprog.ui" line="762"/>
+        <source>Tile</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="naprog.ui" line="767"/>
+        <source>Cascade</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="naprog.ui" line="772"/>
+        <source>&gt; Next Window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="naprog.ui" line="777"/>
+        <source>&lt; Previous Window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="naprog.ui" line="782"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="naprog.ui" line="787"/>
+        <source>Close &amp;All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="naprog.ui" line="792"/>
+        <source>Maximize</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="naprog.ui" line="797"/>
+        <source>Restore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="naprog.cpp" line="66"/>
         <source>Copyright-Informationen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="68"/>
+        <location filename="naprog.cpp" line="67"/>
         <source>&lt;h1&gt;Notatio Antiqua 0.7&amp;szlig;&lt;/h1&gt;&amp;copy; 2009-2010 DGSOFTWARE&lt;br /&gt;&lt;br /&gt;David Gippner M.A.&lt;br /&gt;Hans-Berger-Stra&amp;szlig;e 20&lt;br /&gt;07747 Jena&lt;br /&gt;&lt;a href=&apos;mailto:davidgippner@googlemail.com&apos;&gt;davidgippner@googlemail.com&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&lt;br /&gt; This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;a href=http://www.gnu.org/licenses/&gt;http://www.gnu.org/licenses/&lt;/a&gt;.</source>
         <oldsource>&lt;h1&gt;Notatio Antiqua 0.7&amp;szlig;&lt;/h1&gt;&amp;copy; 2009-2010 DGSOFTWARE&lt;br /&gt;&lt;br /&gt;David Gippner M.A.&lt;br /&gt;Hans-Berger-Stra&amp;szlig;e 20&lt;br /&gt;07747 Jena&lt;br /&gt;&lt;a href=&apos;mailto:davidgippner@googlemail.com&apos;&gt;davidgippner@googlemail.com&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Dieses Programm ist freie Software. Sie k&amp;ouml;nnen es unter den Bedingungen der GNU General Public License,wie von der Free Software Foundation ver&amp;ouml;ffentlicht, weitergeben und/oder modifizieren, entweder gem&amp;auml;&amp;szlig; Version 3 der Lizenz oder (nach Ihrer Option) jeder sp&amp;auml;teren Version.&lt;br /&gt;&lt;br /&gt;Die Ver&amp;ouml;ffentlichung dieses Programms erfolgt in der Hoffnung, da&amp;szlig; es Ihnen von Nutzen sein wird,aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT F&amp;Uuml;R EINEN BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License.&lt;br /&gt;&lt;br /&gt;Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Programm erhalten haben.Falls nicht, siehe &lt;a href=&apos;http://www.gnu.org/licenses/&apos;&gt;http://www.gnu.org/licenses/&lt;/a&gt;.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="148"/>
-        <location filename="naprog.cpp" line="504"/>
-        <location filename="naprog.cpp" line="585"/>
-        <location filename="naprog.cpp" line="591"/>
-        <location filename="naprog.cpp" line="606"/>
-        <location filename="naprog.cpp" line="619"/>
-        <location filename="naprog.cpp" line="633"/>
-        <location filename="naprog.cpp" line="656"/>
-        <location filename="naprog.cpp" line="669"/>
-        <location filename="naprog.cpp" line="683"/>
-        <location filename="naprog.cpp" line="706"/>
-        <location filename="naprog.cpp" line="719"/>
-        <location filename="naprog.cpp" line="733"/>
-        <location filename="naprog.cpp" line="757"/>
+        <location filename="naprog.cpp" line="147"/>
+        <location filename="naprog.cpp" line="503"/>
+        <location filename="naprog.cpp" line="584"/>
+        <location filename="naprog.cpp" line="590"/>
+        <location filename="naprog.cpp" line="605"/>
+        <location filename="naprog.cpp" line="618"/>
+        <location filename="naprog.cpp" line="632"/>
+        <location filename="naprog.cpp" line="655"/>
+        <location filename="naprog.cpp" line="668"/>
+        <location filename="naprog.cpp" line="682"/>
+        <location filename="naprog.cpp" line="705"/>
+        <location filename="naprog.cpp" line="718"/>
+        <location filename="naprog.cpp" line="732"/>
+        <location filename="naprog.cpp" line="756"/>
         <source>Notatio Antiqua</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="99"/>
+        <location filename="naprog.cpp" line="98"/>
         <source>Open File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="112"/>
-        <location filename="naprog.cpp" line="135"/>
+        <location filename="naprog.cpp" line="111"/>
+        <location filename="naprog.cpp" line="134"/>
         <source>File opened.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="149"/>
+        <location filename="naprog.cpp" line="148"/>
         <source>&apos;%1&apos; will be reopened.
 Do you really want to revert it to the last saved state?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="164"/>
+        <location filename="naprog.cpp" line="163"/>
         <source>File reopened.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="179"/>
-        <location filename="naprog.cpp" line="185"/>
+        <location filename="naprog.cpp" line="178"/>
+        <location filename="naprog.cpp" line="184"/>
         <source>Saved.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="288"/>
+        <location filename="naprog.cpp" line="287"/>
         <source>Program output</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="298"/>
+        <location filename="naprog.cpp" line="297"/>
         <source>Notatio Antiqua 0.7 beta</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="504"/>
+        <location filename="naprog.cpp" line="503"/>
         <source>Please select a template for the creation of the PDF file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="505"/>
+        <location filename="naprog.cpp" line="504"/>
         <source>Open Template</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="586"/>
+        <location filename="naprog.cpp" line="585"/>
         <source>No document window open, you can&apos;t run the desired action.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="592"/>
+        <location filename="naprog.cpp" line="591"/>
         <source>Initializing the paths for LaTeX, Lilypond and Gregorio. This can take a while, please be patient.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="607"/>
-        <location filename="naprog.cpp" line="657"/>
-        <location filename="naprog.cpp" line="707"/>
+        <location filename="naprog.cpp" line="606"/>
+        <location filename="naprog.cpp" line="656"/>
+        <location filename="naprog.cpp" line="706"/>
         <source>More than one path for LaTeX has been found:
 already scanned: %1
 newly discovered: %2
@@ -880,9 +920,9 @@ Do you want to use the newly discovered path instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="620"/>
-        <location filename="naprog.cpp" line="670"/>
-        <location filename="naprog.cpp" line="720"/>
+        <location filename="naprog.cpp" line="619"/>
+        <location filename="naprog.cpp" line="669"/>
+        <location filename="naprog.cpp" line="719"/>
         <source>More than one path for LilyPond has been found:
 already scanned: %1
 newly discovered: %2
@@ -890,9 +930,9 @@ Do you want to use the newly discovered path instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="634"/>
-        <location filename="naprog.cpp" line="684"/>
-        <location filename="naprog.cpp" line="734"/>
+        <location filename="naprog.cpp" line="633"/>
+        <location filename="naprog.cpp" line="683"/>
+        <location filename="naprog.cpp" line="733"/>
         <source>More than one path for Gregorio has been found:
 already scanned: %1
 newly discovered: %2
@@ -900,7 +940,7 @@ Do you want to use the newly discovered path instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="758"/>
+        <location filename="naprog.cpp" line="757"/>
         <source>The following paths have been found and have been written to ini file:
  LuaLaTeX: %1
  Lilypond: %2

@@ -78,11 +78,17 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
      QRegExp commentStartExpression;
      QRegExp commentEndExpression;
+     QRegExp gabcCodeStartExpression;
+     QRegExp gabcCodeEndExpression;
+     QRegExp translationStartExpression;
+     QRegExp translationEndExpression;
 
      QTextCharFormat keywordFormat;
      QTextCharFormat classFormat;
      QTextCharFormat singleLineCommentFormat;
      QTextCharFormat multiLineCommentFormat;
+     QTextCharFormat gabcCodeFormat;
+     QTextCharFormat translationFormat;
      QTextCharFormat quotationFormat;
      QTextCharFormat functionFormat;
  };

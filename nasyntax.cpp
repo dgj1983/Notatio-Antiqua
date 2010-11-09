@@ -46,20 +46,14 @@ Highlighter::Highlighter(QTextDocument *parent)
     keywordFormat.setForeground(Qt::darkBlue);
     keywordFormat.setFontWeight(QFont::Bold);
     QStringList keywordPatterns;
-    keywordPatterns << "\\bchar\\b" << "\\bclass\\b" << "\\bconst\\b"
-                    << "\\bdouble\\b" << "\\benum\\b" << "\\bexplicit\\b"
-                    << "\\blilypondfile\\b" <<"\\bdocumentclass\\b" <<"\\busepackage\\b"
-                    <<"\\bdef\\b" <<"\\brenewcommand\\b" <<"\\bhskip\\b"
-                    <<"\\bbegin\\b" <<"\\bend\\b"
-                    << "\\bfriend\\b" << "\\binline\\b" << "\\bint\\b"
-                    << "\\blong\\b" << "\\bnamespace\\b" << "\\boperator\\b"
-                    << "\\bprivate\\b" << "\\bprotected\\b" << "\\bpublic\\b"
-                    << "\\bshort\\b" << "\\bsignals\\b" << "\\bblock\\b"
-                    << "\\bslots\\b" << "\\bstatic\\b" << "\\bmode:\\b"
-                    << "\\btemplate\\b" << "\\btypedef\\b" << "\\bannotation:\\b"
-                    << "\\bunion\\b" << "\\bunsigned\\b" << "\\boccasion:\\b"
-                    << "\\bvoid\\b" << "\\bvolatile\\b" << "\\bname:\\b"
-                    << "\\bueberinitiale\\b" <<  "\\bcommentary\\b" << "\\bsources\\b" << "\\bAbar\\b";
+    keywordPatterns << "\\blilypondfile\\b" <<"\\bdocumentclass\\b" <<"\\busepackage\\b" << "\\bdef\\b" <<"\\brenewcommand\\b" <<"\\bhskip\\b"
+                    << "\\bbegin\\b" <<"\\bend\\b" << "\\bbook\\b" << "\\boccasion\\b" << "\\bname\\b"
+                    << "\\bgabc-copyright\\b" << "\\bscore-copyright\\b" << "\\boffice-part\\b"
+                    << "\\bmeter\\b" << "\\barranger\\b" << "\\bgabc-version\\b"
+                    << "\\bauthor\\b" << "\\bdate\\b" << "\\bmanuscript\\b" << "\\bmanuscript-reference\\b"
+                    << "\\bmanuscript-storage-place\\b" << "\\btranscriber\\b" << "\\btranscription-date\\b"
+                    << "\\bgregoriotex-font\\b" << "\\bmode\\b" << "\\binitial-style\\b" << "\\buser-notes\\b"
+                    << "\\bannotation\\b" << "\\bueberinitiale\\b" <<  "\\bcommentary\\b" << "\\bsources\\b" << "\\bAbar\\b";
     foreach (QString pattern, keywordPatterns) {
         rule.pattern = QRegExp(pattern);
         rule.format = keywordFormat;
@@ -77,7 +71,8 @@ Highlighter::Highlighter(QTextDocument *parent)
     rule.format = singleLineCommentFormat;
     highlightingRules.append(rule);
 
-    multiLineCommentFormat.setForeground(Qt::red);
+    gabcCodeFormat.setForeground(Qt::red);
+    translationFormat.setForeground(Qt::darkYellow);
 
     quotationFormat.setForeground(Qt::darkGreen);
     rule.pattern = QRegExp("\".*\"");
@@ -90,10 +85,15 @@ Highlighter::Highlighter(QTextDocument *parent)
     rule.format = functionFormat;
     highlightingRules.append(rule);
 
-    multiLineCommentFormat.setForeground(Qt::darkRed);
-    multiLineCommentFormat.setFontWeight(QFont::Bold);
-    commentStartExpression = QRegExp("\\(");
-    commentEndExpression = QRegExp("\\)");
+    gabcCodeFormat.setForeground(Qt::darkRed);
+    gabcCodeFormat.setFontWeight(QFont::Bold);
+    gabcCodeStartExpression = QRegExp("\\(");
+    gabcCodeEndExpression = QRegExp("\\)");
+
+    translationFormat.setForeground(Qt::darkYellow);
+    translationFormat.setFontWeight(QFont::Normal);
+    translationStartExpression = QRegExp("\\[");
+    translationEndExpression = QRegExp("\\]");
 }
 
 void Highlighter::highlightBlock(const QString &text)
@@ -111,20 +111,39 @@ void Highlighter::highlightBlock(const QString &text)
 
     int startIndex = 0;
     if (previousBlockState() != 1)
-        startIndex = text.indexOf(commentStartExpression);
+        startIndex = text.indexOf(gabcCodeStartExpression);
 
     while (startIndex >= 0) {
-        int endIndex = text.indexOf(commentEndExpression, startIndex);
-        int commentLength;
+        int endIndex = text.indexOf(gabcCodeEndExpression, startIndex);
+        int gcLength;
         if (endIndex == -1) {
             setCurrentBlockState(1);
-            commentLength = text.length() - startIndex;
+            gcLength = text.length() - startIndex;
         } else {
-            commentLength = endIndex - startIndex
-                            + commentEndExpression.matchedLength();
+            gcLength = endIndex - startIndex
+                            + gabcCodeEndExpression.matchedLength();
         }
-        setFormat(startIndex, commentLength, multiLineCommentFormat);
-        startIndex = text.indexOf(commentStartExpression,
-                                                startIndex + commentLength);
+        setFormat(startIndex, gcLength, gabcCodeFormat);
+        startIndex = text.indexOf(gabcCodeStartExpression,
+                                                startIndex + gcLength);
+    }
+
+    startIndex = 0;
+    if (previousBlockState() != 1)
+        startIndex = text.indexOf(translationStartExpression);
+
+    while (startIndex >= 0) {
+        int endIndex = text.indexOf(translationEndExpression, startIndex);
+        int trLength;
+        if (endIndex == -1) {
+            setCurrentBlockState(1);
+            trLength = text.length() - startIndex;
+        } else {
+            trLength = endIndex - startIndex
+                            + translationEndExpression.matchedLength();
+        }
+        setFormat(startIndex, trLength, translationFormat);
+        startIndex = text.indexOf(translationStartExpression,
+                                                startIndex + trLength);
     }
 }
