@@ -89,7 +89,8 @@ void NaProg::neu()
 {
     MdiChild *child = createMdiChild();
     child->newFile();
-    child->show();
+    child->showMaximized();
+    child->activateWindow();
 }
 
 void NaProg::offen()
@@ -315,6 +316,14 @@ void NaProg::createWorkspaces()
             this, SLOT(offenLetzte()));
     connect(ui->actionErneut_ffnen,SIGNAL(triggered()),this,SLOT(offenWieder()));
     ui->menuDatei->addAction(lastOpenFile);
+    // Workaround for strange behaviour
+    MdiChild *child = createMdiChild();
+    child->newFile();
+    child->showMaximized();
+    child->close();
+    // End Workaround
+    neu();
+
 
 }
 
@@ -780,5 +789,8 @@ void NaProg::on_actionClef_triggered()
     else error_noopenfile();
     if (!retclef.isEmpty())
         if(activeMdiChild())
-            activeMdiChild()->append(retclef);
+        {
+        activeMdiChild()->activateWindow();
+        activeMdiChild()->insertFromMenuWizard(retclef);
+        }
 }

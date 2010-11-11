@@ -159,3 +159,7 @@ QString MdiChild::strippedName(const QString &fullFileName)
     return QFileInfo(fullFileName).fileName();
 }
 
+void MdiChild::insertFromMenuWizard(const QString &value)
+{
+    append(value);
+}

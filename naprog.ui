@@ -40,23 +40,38 @@
       <family>Ubuntu</family>
      </font>
     </property>
+    <property name="toolTip">
+     <string extracomment="Document area"/>
+    </property>
+    <property name="statusTip">
+     <string extracomment="Document area"/>
+    </property>
+    <property name="locale">
+     <locale language="C" country="AnyCountry"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
     <property name="background">
      <brush brushstyle="SolidPattern">
       <color alpha="255">
        <red>255</red>
        <green>255</green>
-       <blue>230</blue>
+       <blue>246</blue>
       </color>
      </brush>
     </property>
     <property name="activationOrder">
-     <enum>QMdiArea::StackingOrder</enum>
+     <enum>QMdiArea::CreationOrder</enum>
     </property>
     <property name="viewMode">
      <enum>QMdiArea::TabbedView</enum>
     </property>
     <property name="documentMode">
      <bool>true</bool>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="tabPosition">
      <enum>QTabWidget::North</enum>
@@ -537,6 +552,10 @@
    </property>
   </action>
   <action name="actionLyTeX_PDF">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/lytexpdf.png</normaloff>:/images/lytexpdf.png</iconset>
+   </property>
    <property name="text">
     <string>LyTeX-&gt;PDF</string>
    </property>
@@ -548,6 +567,10 @@
    </property>
   </action>
   <action name="actionGregorioTeX_PDF">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/gabctopdf.png</normaloff>:/images/gabctopdf.png</iconset>
+   </property>
    <property name="text">
     <string>GregorioTeX-&gt;PDF</string>
    </property>

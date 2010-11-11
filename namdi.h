@@ -74,6 +74,7 @@ public:
     QString curFile;
     bool isUntitled;
     Highlighter *highlighter;
+    void insertFromMenuWizard(const QString &value);
 
 protected:
     void closeEvent(QCloseEvent *event);

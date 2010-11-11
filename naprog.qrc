@@ -20,5 +20,7 @@
         <file>help/helpindex-de.html</file>
         <file>notantiq.icns</file>
         <file>notantiq.ico</file>
+        <file>images/gabctopdf.png</file>
+        <file>images/lytexpdf.png</file>
     </qresource>
 </RCC>
