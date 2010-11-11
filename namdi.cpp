@@ -161,5 +161,5 @@ QString MdiChild::strippedName(const QString &fullFileName)
 
 void MdiChild::insertFromMenuWizard(const QString &value)
 {
-    append(value);
+    insertPlainText(value);
 }
