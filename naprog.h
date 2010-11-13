@@ -21,6 +21,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 #include "nahelp.h"
 #include "namdi.h"
 #include "naclefselect.h"
+#include "naheaderwizard.h"
 
 class MdiChild;
 QT_BEGIN_NAMESPACE
@@ -71,6 +72,7 @@ public:
     QString LaTeX_Path;
     QString Lilypond_Path;
     QString Gregorio_Path;
+    QString tmplName;
 
 
 protected:
@@ -111,6 +113,39 @@ private slots:
     void gregorio_prepare();
     void reset_headers();
     void tolog();
+    void on_actionHeader_Wizard_triggered();
+
+    void on_actionCeleriter_triggered();
+
+    void on_actionTenere_triggered();
+
+    void on_actionMediocriter_triggered();
+
+    void on_actionNon_triggered();
+
+    void on_actionExspecta_triggered();
+
+    void on_actionVirgula_triggered();
+
+    void on_actionQuarter_Bar_triggered();
+
+    void on_actionHalf_Bar_triggered();
+
+    void on_actionDouble_Bar_triggered();
+
+    void on_actionFull_Bar_triggered();
+
+    void on_actionDagger_triggered();
+
+    void on_actionCross_triggered();
+
+    void on_actionVerse_triggered();
+
+    void on_actionResponse_triggered();
+
+    void on_actionAntiphon_triggered();
+
+    void on_actionAccented_triggered();
 
 private:
     void info();

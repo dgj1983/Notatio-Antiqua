@@ -11,15 +11,18 @@ DEPENDPATH += . \
 INCLUDEPATH += .
 
 # Input
-HEADERS += naclefselect.h nahelp.h namdi.h naprog.h nasettings.h nasyntax.h
-FORMS += naclefselect.ui nahelp.ui naprog.ui nasettings.ui
+HEADERS += naclefselect.h nahelp.h namdi.h naprog.h nasettings.h nasyntax.h \
+    naheaderwizard.h
+FORMS += naclefselect.ui nahelp.ui naprog.ui nasettings.ui \
+    naheaderwizard.ui
 SOURCES += main.cpp \
            naclefselect.cpp \
            nahelp.cpp \
            namdi.cpp \
            naprog.cpp \
            nasettings.cpp \
-           nasyntax.cpp
+           nasyntax.cpp \
+    naheaderwizard.cpp
 RC_FILE += notantiq-w32.rc
 ICON += notantiq.icns
 RESOURCES += naprog.qrc

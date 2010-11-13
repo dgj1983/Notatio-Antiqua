@@ -136,6 +136,7 @@
      <addaction name="actionVirgula"/>
      <addaction name="actionQuarter_Bar"/>
      <addaction name="actionHalf_Bar"/>
+     <addaction name="actionFull_Bar"/>
      <addaction name="actionDouble_Bar"/>
      <addaction name="separator"/>
      <addaction name="actionDominican_Bars"/>
@@ -637,61 +638,6 @@
     <string>Header Wizard</string>
    </property>
   </action>
-  <action name="actionC1">
-   <property name="text">
-    <string>c1</string>
-   </property>
-  </action>
-  <action name="actionC2">
-   <property name="text">
-    <string>c2</string>
-   </property>
-  </action>
-  <action name="actionC3">
-   <property name="text">
-    <string>c3</string>
-   </property>
-  </action>
-  <action name="actionC4">
-   <property name="text">
-    <string>c4</string>
-   </property>
-  </action>
-  <action name="actionF2">
-   <property name="text">
-    <string>f2</string>
-   </property>
-  </action>
-  <action name="actionF3">
-   <property name="text">
-    <string>f3</string>
-   </property>
-  </action>
-  <action name="actionF4">
-   <property name="text">
-    <string>f4</string>
-   </property>
-  </action>
-  <action name="actionC_clef">
-   <property name="text">
-    <string>c-clef</string>
-   </property>
-  </action>
-  <action name="actionC_clef_with_b_molle">
-   <property name="text">
-    <string>c-clef with b-molle</string>
-   </property>
-  </action>
-  <action name="actionF_clef">
-   <property name="text">
-    <string>f-clef</string>
-   </property>
-  </action>
-  <action name="actionF_clef_with_b_molle">
-   <property name="text">
-    <string>f-clef with b-molle</string>
-   </property>
-  </action>
   <action name="actionVirgula">
    <property name="text">
     <string>Virgula</string>
@@ -818,6 +764,11 @@
   <action name="actionRestore">
    <property name="text">
     <string>Restore</string>
+   </property>
+  </action>
+  <action name="actionFull_Bar">
+   <property name="text">
+    <string>Full Bar</string>
    </property>
   </action>
  </widget>

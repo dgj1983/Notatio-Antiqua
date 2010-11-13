@@ -64,7 +64,7 @@ void NaProg::changeEvent(QEvent *e)
 void NaProg::info()
 {
     QMessageBox::about(this, tr("Copyright-Informationen"),
-             tr("<h1>Notatio Antiqua 0.7&szlig;</h1>"
+             tr("<h1>Notatio Antiqua 0.8&beta;</h1>"
                 "&copy; 2009-2010 DGSOFTWARE<br /><br />"
                 "David Gippner M.A.<br />"
                 "Hans-Berger-Stra&szlig;e 20<br />"
@@ -295,7 +295,7 @@ void NaProg::createWorkspaces()
     windowMapper = new QSignalMapper(this);
     connect(windowMapper, SIGNAL(mapped(QWidget *)),
             this, SLOT(setActiveSubWindow(QWidget *)));
-    setWindowTitle(tr("Notatio Antiqua 0.7 beta"));
+    setWindowTitle(tr("Notatio Antiqua 0.8 beta"));
     setUnifiedTitleAndToolBarOnMac(true);
     setStatusBar(statusBar());
     QSettings* preferences = new QSettings(QSettings::IniFormat, QSettings::UserScope,
@@ -316,15 +316,6 @@ void NaProg::createWorkspaces()
             this, SLOT(offenLetzte()));
     connect(ui->actionErneut_ffnen,SIGNAL(triggered()),this,SLOT(offenWieder()));
     ui->menuDatei->addAction(lastOpenFile);
-    // Workaround for strange behaviour
-    MdiChild *child = createMdiChild();
-    child->newFile();
-    child->showMaximized();
-    child->close();
-    // End Workaround
-    neu();
-
-
 }
 
 void NaProg::on_actionLaTeX_PDF_triggered()
@@ -509,46 +500,51 @@ gregorio_prepare();
 void NaProg::gregorio_prepare()
 {
   QFileInfo openfile(activeMdiChild()->curFile);
-  QMessageBox::question(this,tr("Notatio Antiqua"),tr("Please select a template for the creation of the PDF file."),QMessageBox::Ok);
-  QString tmplName = QFileDialog::getOpenFileName(this,tr("Open Template"),"",
-                                                  "Notatio Antiqua Template (*.natemplate)");
+  if (tmplName.isEmpty())
+  {
+      QMessageBox::question(this,tr("Notatio Antiqua"),tr("Please select a template for the creation of the PDF file."),QMessageBox::Ok);
+      tmplName = QFileDialog::getOpenFileName(this,tr("Open Template"),"", "Notatio Antiqua Template (*.natemplate)");
+  }
   QString gabcName = openfile.fileName();
   QString outputName = openfile.absolutePath()+"/"+openfile.baseName()+"-main.tex";
   QFile tmpl(tmplName);
   QFile output(outputName);
-  QStringList tmplcontent;
-  tmpl.open(QFile::ReadOnly | QFile::Text);
-  QTextStream in(&tmpl);
-  int i = 0;
-  while (!in.atEnd())
+  if (!output.exists())
   {
-      tmplcontent << in.readLine();
-      ++i;
-  }
-  if (hi.font == "" ) hi.font = "greciliae"; // Standard
-  tmplcontent.replaceInStrings(QRegExp("VAR:FONT"), hi.font);
-  tmplcontent.replaceInStrings(QRegExp("VAR:NAME"), hi.name);
-  tmplcontent.replaceInStrings(QRegExp("VAR:ANN1"), hi.annotation1);
-  tmplcontent.replaceInStrings(QRegExp("VAR:ANN2"), hi.annotation2);
-  tmplcontent.replaceInStrings(QRegExp("VAR:COMMENTARY"), hi.commentary);
-  tmplcontent.replaceInStrings(QRegExp("VAR:FILENAME"), gabcName);
-  tmplcontent.replaceInStrings(QRegExp("VAR:USERNOTES"),hi.notes);
-  i = 0;
-  if (QFile::exists(outputName))
-  {
-      QString bak = outputName;
-      bak.append("~");
-      QFile::copy(outputName,bak);
-      QFile::remove(outputName);
-  }
-  output.open(QFile::ReadWrite | QFile::Text);
-  QTextStream out(&output);
-      while (i <= tmplcontent.count()-1)
+      QStringList tmplcontent;
+      tmpl.open(QFile::ReadOnly | QFile::Text);
+      QTextStream in(&tmpl);
+      int i = 0;
+      while (!in.atEnd())
       {
-          out << tmplcontent[i] << "\n";
+          tmplcontent << in.readLine();
           ++i;
       }
-  reset_headers();
+      if (hi.font == "" ) hi.font = "greciliae"; // Standard
+      tmplcontent.replaceInStrings(QRegExp("VAR:FONT"), hi.font);
+      tmplcontent.replaceInStrings(QRegExp("VAR:NAME"), hi.name);
+      tmplcontent.replaceInStrings(QRegExp("VAR:ANN1"), hi.annotation1);
+      tmplcontent.replaceInStrings(QRegExp("VAR:ANN2"), hi.annotation2);
+      tmplcontent.replaceInStrings(QRegExp("VAR:COMMENTARY"), hi.commentary);
+      tmplcontent.replaceInStrings(QRegExp("VAR:FILENAME"), gabcName);
+      tmplcontent.replaceInStrings(QRegExp("VAR:USERNOTES"),hi.notes);
+      i = 0;
+      if (QFile::exists(outputName))
+      {
+          QString bak = outputName;
+          bak.append("~");
+          QFile::copy(outputName,bak);
+          QFile::remove(outputName);
+      }
+      output.open(QFile::ReadWrite | QFile::Text);
+      QTextStream out(&output);
+          while (i <= tmplcontent.count()-1)
+          {
+              out << tmplcontent[i] << "\n";
+              ++i;
+          }
+      reset_headers();
+  }
 }
 
 void NaProg::reset_headers()
@@ -793,4 +789,130 @@ void NaProg::on_actionClef_triggered()
         activeMdiChild()->activateWindow();
         activeMdiChild()->insertFromMenuWizard(retclef);
         }
+}
+
+void NaProg::on_actionHeader_Wizard_triggered()
+{
+    NAHeaderWizard wiz;
+    if (activeMdiChild())
+    {
+        if (wiz.exec() == QDialog::Accepted)
+        {
+            QStringList::const_iterator it;
+            for (it= wiz.header.constBegin(); it!= wiz.header.constEnd();++it)
+            {
+            activeMdiChild()->append(*it);
+            }
+        }
+    }
+    else
+    {
+        neu();
+        if (wiz.exec() == QDialog::Accepted)
+        {
+            QStringList::const_iterator it;
+            for (it= wiz.header.constBegin(); it!= wiz.header.constEnd();++it)
+            {
+            activeMdiChild()->append(*it);
+            }
+            activeMdiChild()->append("");
+            on_actionClef_triggered();
+        }
+    }
+}
+
+void NaProg::on_actionCeleriter_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("[cs:c]");
+}
+
+void NaProg::on_actionTenere_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("[cs:t]");
+}
+
+void NaProg::on_actionMediocriter_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("[cs:m]");
+}
+
+void NaProg::on_actionNon_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("[cs:n]");
+}
+
+void NaProg::on_actionExspecta_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("[cs:x]");
+}
+
+void NaProg::on_actionVirgula_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("(`)");
+}
+
+void NaProg::on_actionQuarter_Bar_triggered()
+{
+        if (activeMdiChild())
+            activeMdiChild()->insertFromMenuWizard("(,)");
+}
+
+void NaProg::on_actionHalf_Bar_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("(;)");
+}
+
+void NaProg::on_actionDouble_Bar_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("(::)");
+}
+
+void NaProg::on_actionFull_Bar_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("(:)");
+}
+
+void NaProg::on_actionDagger_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("+");
+}
+
+void NaProg::on_actionCross_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("<v>\\grecross</v>");
+}
+
+void NaProg::on_actionVerse_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("<sp>V/</sp>");
+}
+
+void NaProg::on_actionResponse_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("<sp>R/</sp>");
+}
+
+void NaProg::on_actionAntiphon_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("<sp>A/</sp>");
+}
+
+void NaProg::on_actionAccented_triggered()
+{
+    if (activeMdiChild())
+        activeMdiChild()->insertFromMenuWizard("<sp>'æ</sp>");
 }

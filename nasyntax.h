@@ -80,6 +80,8 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
      QRegExp commentEndExpression;
      QRegExp gabcCodeStartExpression;
      QRegExp gabcCodeEndExpression;
+     QRegExp spcharStartExpression;
+     QRegExp spcharEndExpression;
      QRegExp translationStartExpression;
      QRegExp translationEndExpression;
 
@@ -88,6 +90,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
      QTextCharFormat singleLineCommentFormat;
      QTextCharFormat multiLineCommentFormat;
      QTextCharFormat gabcCodeFormat;
+     QTextCharFormat spcharFormat;
      QTextCharFormat translationFormat;
      QTextCharFormat quotationFormat;
      QTextCharFormat functionFormat;

@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NAHeaderWizard</class>
+ <widget class="QWizard" name="NAHeaderWizard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>609</width>
+    <height>405</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NAHeaderWizard</string>
+  </property>
+  <widget class="QWizardPage" name="welcomePage">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>391</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt;Welcome to the Header creation wizard!&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;In the next steps you will be asked some questions concerning your score. Please note, only giving the name is mandatory, all other information can, but needn't be given.&lt;/p&gt;
+&lt;p style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The fields for name, commentary, annotation and the user-notes will be used for typesetting the resulting PDF; the first annotation field will be set in the first line above the initial, the second annotation field in the second line above the initial.&lt;/p&gt;
+&lt;p style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Click &amp;quot;Next&amp;quot; to continue.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="basicInfo">
+   <widget class="QLineEdit" name="nameE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>60</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nameL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>62</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>371</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Page 1: Basic score information</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="commentaryL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Commentary</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="commentaryE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>90</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>commentary</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="annotation1L">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Annotation (1)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="annotation1E">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>120</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>annotation (first line)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="annotation2L">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Annotation (2)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="annotation2E">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>150</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>annotation (second line)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fontL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>62</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Font</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fontE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>180</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>gregoriotex font</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="initialL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>210</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Initial Style</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="initialBox">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>210</y>
+      <width>57</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>371</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Click &quot;Next&quot; to continue to liturgical information.</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="liturgicalInfo">
+   <widget class="QLineEdit" name="modeE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>120</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>mode (I-VIII, Irr, Per)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="meterE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>150</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>meter (for metrical hymns)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="occasionE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>60</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Occasion</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="occasionL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>62</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Occasion</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="officePartL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Office Part</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="modeL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Mode</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="meterL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Meter</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>371</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Page 2: Liturgical information</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="officePartE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>90</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Office Part</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>371</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Click &quot;Next&quot; to continue to historical information.</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="historicalInfo">
+   <widget class="QLineEdit" name="authorE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>50</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Author (if known)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="manuscriptE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>110</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Manuscript</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>371</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Click &quot;Next&quot; to continue to transcription information.</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="referenceE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>140</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Manuscript reference</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dateL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Date</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="authorL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>62</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Author</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="manuscriptL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Manuscript</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>371</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Page 3: Historical information</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="dateE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>80</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Date (e.g. XI.s.)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="referenceL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Reference</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="storageE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>170</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Manuscript Storage Place</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="storageL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Storage Place</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="transcriptionInfo">
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>371</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Page 4: Transcription information</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>371</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Click &quot;Next&quot; to continue to transcription information.</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="arrangerE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>80</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>arranger</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="transcriptiondateL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Date</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="usernotesE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>170</y>
+      <width>271</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>user notes</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="transcriberL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Transcriber</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arrangerL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Arranger</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bookL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>62</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Book</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="usernotesL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>User Notes</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bookE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>50</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>book (from which taken)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="transcriptiondateE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>140</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>transcription date</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="transcriberE">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>110</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>transcriber</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="copyrightInfo">
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>371</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Page 5: Copyright information</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="gabccE">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>50</y>
+      <width>261</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>gabc copyright</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="scorecE">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>80</y>
+      <width>261</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>score copyright</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="scorecL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>score copyright</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>371</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Click &quot;Finish&quot; to close this wizard and get back to the gabc.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gabccL">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>gabc copyright</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

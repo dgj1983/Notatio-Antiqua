@@ -90,10 +90,16 @@ Highlighter::Highlighter(QTextDocument *parent)
     gabcCodeStartExpression = QRegExp("\\(");
     gabcCodeEndExpression = QRegExp("\\)");
 
+    spcharFormat.setForeground(Qt::blue);
+    spcharFormat.setFontWeight(QFont::Bold);
+    spcharStartExpression = QRegExp("\\<");
+    spcharEndExpression = QRegExp("\\>");
+
     translationFormat.setForeground(Qt::darkYellow);
     translationFormat.setFontWeight(QFont::Normal);
     translationStartExpression = QRegExp("\\[");
     translationEndExpression = QRegExp("\\]");
+
 }
 
 void Highlighter::highlightBlock(const QString &text)
@@ -144,6 +150,24 @@ void Highlighter::highlightBlock(const QString &text)
         }
         setFormat(startIndex, trLength, translationFormat);
         startIndex = text.indexOf(translationStartExpression,
+                                                startIndex + trLength);
+    }
+    startIndex = 0;
+    if (previousBlockState() != 1)
+        startIndex = text.indexOf(spcharStartExpression);
+
+    while (startIndex >= 0) {
+        int endIndex = text.indexOf(spcharEndExpression, startIndex);
+        int trLength;
+        if (endIndex == -1) {
+            setCurrentBlockState(1);
+            trLength = text.length() - startIndex;
+        } else {
+            trLength = endIndex - startIndex
+                            + spcharEndExpression.matchedLength();
+        }
+        setFormat(startIndex, trLength, spcharFormat);
+        startIndex = text.indexOf(spcharStartExpression,
                                                 startIndex + trLength);
     }
 }
