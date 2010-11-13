@@ -1,5 +1,9 @@
-Willkommen bei der Installation für Notatio Antiqua 0.7 beta.
+Willkommen bei der Installation für Notatio Antiqua 0.8 beta.
 
-Dieses Programm dient der Übersetzung von GABC-Dateien in PDFs. Sie benötigen zusätzlich(!) noch TeXLive ab 2010 (zu beziehen über http://www.tug.org/texlive) und Gregorio ab Version 2 (zu beziehen über http://home.gna.org/gregorio).
+Dieses Programm dient der Übersetzung von GABC-Dateien in PDFs. 
+
+Sie benötigen zusätzlich(!) noch 
+- TeXLive ab 2010 (zu beziehen über http://www.tug.org/texlive) und 
+- Gregorio ab Version 2 (zu beziehen über http://home.gna.org/gregorio).
 
 Viel Spaß!

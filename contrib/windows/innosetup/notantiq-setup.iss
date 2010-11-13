@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Notatio Antiqua"
-#define MyAppVersion "0.7b"
+#define MyAppVersion "0.8b"
 #define MyAppPublisher "DGSOFTWARE"
 #define MyAppURL "http://www.dgippner.de/blog2.php"
 #define MyAppExeName "NotAntiq.exe"
@@ -26,7 +26,7 @@ InfoBeforeFile=C:\Documents and Settings\Administrator\My Documents\notantiq\con
 InfoAfterFile=C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\innosetup\finished.txt
 OutputDir=C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\innosetup\setup
 OutputBaseFilename=notantiq-setup-0.7b
-SetupIconFile=C:\Documents and Settings\Administrator\My Documents\notantiq\images\notantiq.ico
+SetupIconFile=C:\Documents and Settings\Administrator\My Documents\notantiq\notantiq.ico
 Compression=lzma/Max
 SolidCompression=false
 
@@ -52,7 +52,7 @@ Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\wi
 Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\dlls\libgcc_s_dw2-1.dll; DestDir: {sys}; Flags: confirmoverwrite promptifolder onlyifdoesntexist; 
 Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\dlls\QtCore4.dll; DestDir: {sys}; Flags: confirmoverwrite promptifolder onlyifdoesntexist; 
 Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\dlls\QtGui4.dll; DestDir: {sys}; Flags: confirmoverwrite promptifolder onlyifdoesntexist; 
-Source: C:\Documents and Settings\Administrator\My Documents\notantiq\images\notantiq.ico; DestDir: {app}; 
+Source: C:\Documents and Settings\Administrator\My Documents\notantiq\notantiq.ico; DestDir: {app}; 
 Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\font\Ubuntu-B.ttf; DestDir: {fonts}; Flags: promptifolder onlyifdoesntexist; 
 Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\font\Ubuntu-BI.ttf; DestDir: {fonts}; Flags: promptifolder onlyifdoesntexist; 
 Source: C:\Documents and Settings\Administrator\My Documents\notantiq\contrib\windows\font\Ubuntu-I.ttf; DestDir: {fonts}; Flags: promptifolder onlyifdoesntexist; 
