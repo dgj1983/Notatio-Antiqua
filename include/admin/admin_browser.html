@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>File Browser - gpEasy</title>
+<script type="text/javascript">
+
+function getQueryValue(key,txt){
+	var r = new RegExp('(?:[\?&]|&amp;)'+key+'=([^&]+)','i');
+	var v = txt.match(r);
+	return (v && v.length > 1 ) ? v[1]:'';
+}
+
+
+function showbrowser(){
+	var dir = getQueryValue('dir',window.location.search);
+	var b = '../../index.php/Admin_Browser?dir='+dir;
+	document.getElementById('frame').src = b;
+}
+
+</script>
+
+</head>
+
+<frameset cols="100%" onload="showbrowser()">
+<frame src="" id="frame" />
+</frameset>
+
+</html>
