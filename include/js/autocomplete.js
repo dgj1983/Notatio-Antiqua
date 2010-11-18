@@ -1,1 +1,0 @@
-$(function(){$("input.autocomplete").css({position:"relative",zIndex:1E5}).autocomplete({source:gptitles,delay:100,minLength:0,select:function(b,a){if(a.item)this.value=a.item}}).data("autocomplete")._renderItem=function(b,a){return $("<li></li>").data("item.autocomplete",a[1]).append("<a><span>"+a[1]+"</span>"+a[0]+"</a>").appendTo(b)}});

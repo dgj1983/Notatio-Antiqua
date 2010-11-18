@@ -1,1 +1,0 @@
-gplinks.browser_pref=function(a,b){b.preventDefault();gpPublic.postC(window.location.href,"cmd=gppref&browser_display="+a,function(){$("div.display_options a").removeClass("selected").filter("[rel="+a+"]").addClass("selected");$("div.browser_class").removeClass("browser_list browser_icons_small browser_icons").addClass(a)})};
