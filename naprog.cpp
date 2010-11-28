@@ -64,7 +64,7 @@ void NaProg::changeEvent(QEvent *e)
 void NaProg::info()
 {
     QMessageBox::about(this, tr("Copyright-Informationen"),
-             tr("<h1>Notatio Antiqua 0.8&beta;</h1>"
+             tr("<h1>Notatio Antiqua 0.8&beta;2</h1>"
                 "&copy; 2009-2010 DGSOFTWARE<br /><br />"
                 "David Gippner M.A.<br />"
                 "Hans-Berger-Stra&szlig;e 20<br />"
@@ -187,19 +187,34 @@ void NaProg::speichernunter()
 
 void NaProg::ausschneiden()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->cut();
 }
 
 void NaProg::kopieren()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->copy();
 }
 
 void NaProg::einfuegen()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->paste();
 }
 
@@ -381,8 +396,12 @@ void NaProg::on_actionEinstellungen_2_triggered()
 
 void NaProg::on_actionAufr_umen_triggered()
 {
- if (activeMdiChild())
+ MdiChild *active = activeMdiChild();
+    if(!active)
     {
+        error_noopenfile();
+        return;
+    }
        QFileInfo openfile(activeMdiChild()->curFile);
        QString workingpath = openfile.absolutePath();
        QStringList garbage;
@@ -405,10 +424,6 @@ void NaProg::on_actionAufr_umen_triggered()
            }
 
        }
-   }
-
-  else error_noopenfile();
-
 }
 
 void NaProg::gregorio_extract()
@@ -775,28 +790,31 @@ void NaProg::on_actionClef_triggered()
 {
     QString retclef;
     NAClefSelect clefchoice;
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
     {
-      if( clefchoice.exec() == QDialog::Accepted )
+        error_noopenfile();
+        return;
+    }
+    if( clefchoice.exec() == QDialog::Accepted )
         {
           retclef = clefchoice.clefS;
         }
-    }
-    else error_noopenfile();
     if (!retclef.isEmpty())
-        if(activeMdiChild())
-        {
-        activeMdiChild()->activateWindow();
-        activeMdiChild()->insertFromMenuWizard(retclef);
-        }
+       active->insertFromMenuWizard(retclef);
+
 }
 
 void NaProg::on_actionHeader_Wizard_triggered()
 {
     NAHeaderWizard wiz;
     MdiChild *active = activeMdiChild();
-    if(!active) return;
-      if (wiz.exec() == QDialog::Accepted)
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
+    if (wiz.exec() == QDialog::Accepted)
         {
             QStringList::const_iterator it;
             for (it= wiz.header.constBegin(); it!= wiz.header.constEnd();++it)
@@ -809,96 +827,176 @@ void NaProg::on_actionHeader_Wizard_triggered()
 
 void NaProg::on_actionCeleriter_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("[cs:c]");
 }
 
 void NaProg::on_actionTenere_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("[cs:t]");
 }
 
 void NaProg::on_actionMediocriter_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("[cs:m]");
 }
 
 void NaProg::on_actionNon_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("[cs:n]");
 }
 
 void NaProg::on_actionExspecta_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("[cs:x]");
 }
 
 void NaProg::on_actionVirgula_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("(`)");
 }
 
 void NaProg::on_actionQuarter_Bar_triggered()
 {
-        if (activeMdiChild())
+        MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
             activeMdiChild()->insertFromMenuWizard("(,)");
 }
 
 void NaProg::on_actionHalf_Bar_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("(;)");
 }
 
 void NaProg::on_actionDouble_Bar_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("(::)");
 }
 
 void NaProg::on_actionFull_Bar_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("(:)");
 }
 
 void NaProg::on_actionDagger_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("+");
 }
 
 void NaProg::on_actionCross_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("<v>\\grecross</v>");
 }
 
 void NaProg::on_actionVerse_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("<sp>V/</sp>");
 }
 
 void NaProg::on_actionResponse_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("<sp>R/</sp>");
 }
 
 void NaProg::on_actionAntiphon_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("<sp>A/</sp>");
 }
 
 void NaProg::on_actionAccented_triggered()
 {
-    if (activeMdiChild())
+    MdiChild *active = activeMdiChild();
+    if(!active)
+    {
+        error_noopenfile();
+        return;
+    }
         activeMdiChild()->insertFromMenuWizard("<sp>'æ</sp>");
 }
