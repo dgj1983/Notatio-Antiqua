@@ -794,31 +794,17 @@ void NaProg::on_actionClef_triggered()
 void NaProg::on_actionHeader_Wizard_triggered()
 {
     NAHeaderWizard wiz;
-    if (activeMdiChild())
-    {
-        if (wiz.exec() == QDialog::Accepted)
+    MdiChild *active = activeMdiChild();
+    if(!active) return;
+      if (wiz.exec() == QDialog::Accepted)
         {
             QStringList::const_iterator it;
             for (it= wiz.header.constBegin(); it!= wiz.header.constEnd();++it)
             {
-            activeMdiChild()->append(*it);
+            active->append(*it);
             }
         }
-    }
-    else
-    {
-        neu();
-        if (wiz.exec() == QDialog::Accepted)
-        {
-            QStringList::const_iterator it;
-            for (it= wiz.header.constBegin(); it!= wiz.header.constEnd();++it)
-            {
-            activeMdiChild()->append(*it);
-            }
-            activeMdiChild()->append("");
-            on_actionClef_triggered();
-        }
-    }
+
 }
 
 void NaProg::on_actionCeleriter_triggered()
