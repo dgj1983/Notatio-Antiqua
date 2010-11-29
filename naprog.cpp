@@ -310,7 +310,7 @@ void NaProg::createWorkspaces()
     windowMapper = new QSignalMapper(this);
     connect(windowMapper, SIGNAL(mapped(QWidget *)),
             this, SLOT(setActiveSubWindow(QWidget *)));
-    setWindowTitle(tr("Notatio Antiqua 0.8 beta"));
+    setWindowTitle(tr("Notatio Antiqua 0.8 beta 2"));
     setUnifiedTitleAndToolBarOnMac(true);
     setStatusBar(statusBar());
     QSettings* preferences = new QSettings(QSettings::IniFormat, QSettings::UserScope,

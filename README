@@ -1,4 +1,4 @@
-Notatio Antiqua 0.7 Beta Release
+Notatio Antiqua 0.8 Beta 2 Release
 --------------------------------
 
 Licensed under GPLv3 and UFLv1.0 (Ubuntu Font)
@@ -10,11 +10,13 @@ installed Qt 4.7.0 SDK (LGPL)
 2. Check the Compiling options, adapt them to your system (Release//Debug)
 3. Press the green start button. Voilà!
 
-Alternative if you have command line tools:
+Alternatively if you have command line tools:
 
 Enter:
-qmake -project && qmake && make
-then execute (notantiq.exe (Win32) / NotAntiq.app (MacOS X) / notantiq (Linux))
+cmake -G "Unix Makefiles" or corresponding
+make
+
+You should then have a binary in your source path.
 
 Any questions, tips and complaints can be sent by mail to 
 davidgippner@googlemail.com 
