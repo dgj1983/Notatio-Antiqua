@@ -1,0 +1,29 @@
+\pdfprotrudechars2
+\pdfadjustspacing2
+\pdfminorversion=7
+\pdfcompresslevel=9
+\pdfobjcompresslevel=3
+\documentclass[initial=ZallmanCaps,staff=22,font=VAR:FONT,14pt,a4paper,openany,twoside,choralsign=PfefferMediaeval]{gregorian}
+\setmainfont[Ligatures={Common,TeX},Numbers=OldStyle]{Linux Libertine O}
+\setsansfont[Ligatures={Common,TeX},Numbers=OldStyle,SmallCapsFont={Alcuin URW SC}]{Alcuin URW}
+\setmonofont[Ligatures={TeX}]{Inconsolata}
+\sloppy
+\semiisopage[20]
+\checkandfixthelayout[nearest]
+\pagestyle{myheadings}
+\makefootrule{myheadings}{\textwidth}{0.4pt}{\footruleskip}
+\makeheadrule{myheadings}{\textwidth}{0pt}
+\makeevenfoot{myheadings}{\thepage}{}{}
+\makeoddfoot{myheadings}{}{}{\thepage}
+\makeevenhead{myheadings}{\rightmark}{}{}
+\makeoddhead{myheadings}{\hphantom{\thechapter}}{}{}
+\hbadness 99999
+\begin{document}
+\let\grestar\greheightstar
+\begin{center}
+ {\huge\sffamily\bfseries VAR:NAME}
+\end{center}
+\ueberinitiale{VAR:ANN1}{VAR:ANN2}
+\commentary{\textit{VAR:COMMENTARY}}
+\includegabcscore{VAR:FILENAME}
+\end{document}

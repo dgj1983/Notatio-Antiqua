@@ -1,0 +1,22 @@
+\pdfprotrudechars2
+\pdfadjustspacing2
+\pdfminorversion=7
+\pdfcompresslevel=9
+\pdfobjcompresslevel=3
+\documentclass[staff=19,12pt,a4paper]{article}
+\newcommand{\aiintro}[2]{\gresetfirstannotation{\scriptsize #1}\gresetsecondannotation{\scriptsize #2}}
+\usepackage{fontspec}
+\usepackage{gregoriotex}
+\setgregoriofont{VAR:FONT}
+\setmainfont[Ligatures={Common,TeX},Numbers=OldStyle]{Linux Libertine O}
+\setsansfont[Ligatures={Common,TeX},Numbers=OldStyle]{Linux Biolinum O}
+\setmonofont[Ligatures={TeX}]{Courier New}
+\begin{document}
+\begin{center}
+ {\huge\sffamily\bfseries VAR:NAME}
+\end{center}
+\aiintro{VAR:ANN1}{VAR:ANN2}
+\commentary{\textit{VAR:COMMENTARY}}
+\includegabcscore{VAR:FILENAME}
+VAR:USERNOTES
+\end{document}

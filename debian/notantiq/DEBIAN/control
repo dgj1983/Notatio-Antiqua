@@ -1,0 +1,14 @@
+Package: notantiq
+Version: 0.8b2-1
+Architecture: i386
+Maintainer: David Gippner <davidgippner@googlemail.com>
+Installed-Size: 1052
+Depends: libc6 (>= 2.1.3), libgcc1 (>= 1:4.1.1), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.7.0~beta1), libstdc++6 (>= 4.1.1)
+Recommends: gregorio, gregoriotex, luatex, texlive-luatex, texlive-fonts-recommended, lilypond
+Section: unknown
+Priority: extra
+Homepage: dgj1983.github.com/Notatio-Antiqua
+Description: Notatio Antiqua GABC Editor
+ Notatio Antiqua is an editor for GABC files
+ of gregorio and is intended to be a RAD for
+ these files. Currently beta state
