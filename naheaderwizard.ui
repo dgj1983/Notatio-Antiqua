@@ -6,12 +6,18 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>609</width>
-    <height>405</height>
+    <width>419</width>
+    <height>426</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>NAHeaderWizard</string>
+  </property>
+  <property name="wizardStyle">
+   <enum>QWizard::ClassicStyle</enum>
+  </property>
+  <property name="subTitleFormat">
+   <enum>Qt::AutoText</enum>
   </property>
   <widget class="QWizardPage" name="welcomePage">
    <widget class="QTextEdit" name="textEdit">
@@ -524,7 +530,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>290</y>
+      <y>300</y>
       <width>371</width>
       <height>16</height>
      </rect>
@@ -736,7 +742,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>290</y>
+      <y>300</y>
       <width>371</width>
       <height>16</height>
      </rect>
@@ -747,7 +753,7 @@ p, li { white-space: pre-wrap; }
      </font>
     </property>
     <property name="text">
-     <string>Click &quot;Next&quot; to continue to transcription information.</string>
+     <string>Click &quot;Next&quot; to continue to copyright information.</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="arrangerE">

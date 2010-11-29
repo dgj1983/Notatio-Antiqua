@@ -13,6 +13,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 #include <QDialog>
 #include <QSettings>
 #include <QMessageBox>
+#include <QColorDialog>
 
 namespace Ui {
     class NASettings;

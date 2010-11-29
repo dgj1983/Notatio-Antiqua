@@ -390,8 +390,17 @@ void NaProg::on_actionPDF_ansehen_triggered()
 void NaProg::on_actionEinstellungen_2_triggered()
 {
     NASettings* settingsdlg = new NASettings;
-  settingsdlg->setModal(true);
-  settingsdlg->show();
+    MdiChild *active = activeMdiChild();
+    if (!active) return;
+   if (settingsdlg->exec() == QDialog::Accepted)
+   {
+     QSettings* preferences = new QSettings(QSettings::IniFormat, QSettings::UserScope,
+    "DGSOFTWARE", "Notatio Antiqua");
+     preferences->beginGroup("Font");
+     if (preferences->value("standardFont") != "")
+          active->setFontFamily(preferences->value("standardFont").toString());
+     preferences->endGroup();
+   }
 }
 
 void NaProg::on_actionAufr_umen_triggered()

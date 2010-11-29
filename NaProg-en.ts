@@ -80,7 +80,7 @@ Would you like to save these changes?</source>
         <translation>Header Wizard</translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="32"/>
+        <location filename="naheaderwizard.ui" line="38"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -92,239 +92,243 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="59"/>
+        <location filename="naheaderwizard.ui" line="65"/>
         <source>name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="77"/>
+        <location filename="naheaderwizard.ui" line="83"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="98"/>
+        <location filename="naheaderwizard.ui" line="104"/>
         <source>Page 1: Basic score information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="116"/>
+        <location filename="naheaderwizard.ui" line="122"/>
         <source>Commentary</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="134"/>
+        <location filename="naheaderwizard.ui" line="140"/>
         <source>commentary</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="152"/>
+        <location filename="naheaderwizard.ui" line="158"/>
         <source>Annotation (1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="170"/>
+        <location filename="naheaderwizard.ui" line="176"/>
         <source>annotation (first line)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="188"/>
+        <location filename="naheaderwizard.ui" line="194"/>
         <source>Annotation (2)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="206"/>
+        <location filename="naheaderwizard.ui" line="212"/>
         <source>annotation (second line)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="224"/>
+        <location filename="naheaderwizard.ui" line="230"/>
         <source>Font</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="242"/>
+        <location filename="naheaderwizard.ui" line="248"/>
         <source>gregoriotex font</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="260"/>
+        <location filename="naheaderwizard.ui" line="266"/>
         <source>Initial Style</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="291"/>
+        <location filename="naheaderwizard.ui" line="297"/>
         <source>Click &quot;Next&quot; to continue to liturgical information.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="311"/>
+        <location filename="naheaderwizard.ui" line="317"/>
         <source>mode (I-VIII, Irr, Per)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="329"/>
+        <location filename="naheaderwizard.ui" line="335"/>
         <source>meter (for metrical hymns)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="347"/>
-        <location filename="naheaderwizard.ui" line="365"/>
+        <location filename="naheaderwizard.ui" line="353"/>
+        <location filename="naheaderwizard.ui" line="371"/>
         <source>Occasion</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="383"/>
-        <location filename="naheaderwizard.ui" line="458"/>
+        <location filename="naheaderwizard.ui" line="389"/>
+        <location filename="naheaderwizard.ui" line="464"/>
         <source>Office Part</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="401"/>
+        <location filename="naheaderwizard.ui" line="407"/>
         <source>Mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="419"/>
+        <location filename="naheaderwizard.ui" line="425"/>
         <source>Meter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="440"/>
+        <location filename="naheaderwizard.ui" line="446"/>
         <source>Page 2: Liturgical information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="476"/>
+        <location filename="naheaderwizard.ui" line="482"/>
         <source>Click &quot;Next&quot; to continue to historical information.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="499"/>
+        <location filename="naheaderwizard.ui" line="505"/>
         <source>Author (if known)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="520"/>
-        <location filename="naheaderwizard.ui" line="613"/>
+        <location filename="naheaderwizard.ui" line="526"/>
+        <location filename="naheaderwizard.ui" line="619"/>
         <source>Manuscript</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="538"/>
-        <location filename="naheaderwizard.ui" line="750"/>
+        <location filename="naheaderwizard.ui" line="544"/>
         <source>Click &quot;Next&quot; to continue to transcription information.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="559"/>
+        <location filename="naheaderwizard.ui" line="565"/>
         <source>Manuscript reference</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="577"/>
-        <location filename="naheaderwizard.ui" line="789"/>
+        <location filename="naheaderwizard.ui" line="583"/>
+        <location filename="naheaderwizard.ui" line="795"/>
         <source>Date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="595"/>
+        <location filename="naheaderwizard.ui" line="601"/>
         <source>Author</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="634"/>
+        <location filename="naheaderwizard.ui" line="640"/>
         <source>Page 3: Historical information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="655"/>
+        <location filename="naheaderwizard.ui" line="661"/>
         <source>Date (e.g. XI.s.)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="673"/>
+        <location filename="naheaderwizard.ui" line="679"/>
         <source>Reference</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="691"/>
+        <location filename="naheaderwizard.ui" line="697"/>
         <source>Manuscript Storage Place</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="709"/>
+        <location filename="naheaderwizard.ui" line="715"/>
         <source>Storage Place</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="732"/>
+        <location filename="naheaderwizard.ui" line="738"/>
         <source>Page 4: Transcription information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="771"/>
+        <location filename="naheaderwizard.ui" line="756"/>
+        <source>Click &quot;Next&quot; to continue to copyright information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="naheaderwizard.ui" line="777"/>
         <source>arranger</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="807"/>
+        <location filename="naheaderwizard.ui" line="813"/>
         <source>user notes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="825"/>
+        <location filename="naheaderwizard.ui" line="831"/>
         <source>Transcriber</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="843"/>
+        <location filename="naheaderwizard.ui" line="849"/>
         <source>Arranger</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="861"/>
+        <location filename="naheaderwizard.ui" line="867"/>
         <source>Book</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="879"/>
+        <location filename="naheaderwizard.ui" line="885"/>
         <source>User Notes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="900"/>
+        <location filename="naheaderwizard.ui" line="906"/>
         <source>book (from which taken)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="921"/>
+        <location filename="naheaderwizard.ui" line="927"/>
         <source>transcription date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="942"/>
+        <location filename="naheaderwizard.ui" line="948"/>
         <source>transcriber</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="965"/>
+        <location filename="naheaderwizard.ui" line="971"/>
         <source>Page 5: Copyright information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="986"/>
-        <location filename="naheaderwizard.ui" line="1061"/>
+        <location filename="naheaderwizard.ui" line="992"/>
+        <location filename="naheaderwizard.ui" line="1067"/>
         <source>gabc copyright</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="1007"/>
-        <location filename="naheaderwizard.ui" line="1025"/>
+        <location filename="naheaderwizard.ui" line="1013"/>
+        <location filename="naheaderwizard.ui" line="1031"/>
         <source>score copyright</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naheaderwizard.ui" line="1043"/>
+        <location filename="naheaderwizard.ui" line="1049"/>
         <source>Click &quot;Finish&quot; to close this wizard and get back to the gabc.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1526,51 +1530,84 @@ DEALINGS IN THE FONT SOFTWARE.&lt;br&gt;
     </message>
     <message>
         <location filename="nasettings.ui" line="102"/>
-        <source>Standardschrift</source>
-        <translation>Standard font</translation>
+        <source>Default Font</source>
+        <translation>Default Font</translation>
     </message>
     <message>
-        <location filename="nasettings.ui" line="108"/>
+        <location filename="nasettings.ui" line="115"/>
+        <source>Set Colors:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="nasettings.ui" line="128"/>
+        <source>Keywords</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="nasettings.ui" line="141"/>
+        <source>Pitches </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="nasettings.ui" line="154"/>
+        <source>Comments</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="nasettings.ui" line="167"/>
+        <source>Translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="nasettings.ui" line="180"/>
+        <location filename="nasettings.ui" line="193"/>
+        <location filename="nasettings.ui" line="206"/>
+        <location filename="nasettings.ui" line="219"/>
+        <source>...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="nasettings.ui" line="225"/>
         <source>Advanced</source>
         <translation>Advanced</translation>
     </message>
     <message>
-        <location filename="nasettings.ui" line="113"/>
+        <location filename="nasettings.ui" line="230"/>
         <source>System</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="nasettings.ui" line="132"/>
+        <location filename="nasettings.ui" line="249"/>
         <source>Program paths</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="nasettings.ui" line="148"/>
+        <location filename="nasettings.ui" line="265"/>
         <source>LaTeX binaries-Pfad</source>
         <translation>/path/to/latex</translation>
     </message>
     <message>
-        <location filename="nasettings.ui" line="161"/>
+        <location filename="nasettings.ui" line="278"/>
         <source>LaTeX bin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="nasettings.ui" line="177"/>
+        <location filename="nasettings.ui" line="294"/>
         <source>Gregorio-Pfad</source>
         <translation>/path/to/gregorio</translation>
     </message>
     <message>
-        <location filename="nasettings.ui" line="190"/>
+        <location filename="nasettings.ui" line="307"/>
         <source>Gregorio</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="nasettings.ui" line="203"/>
+        <location filename="nasettings.ui" line="320"/>
         <source>Lilypond-Pfad</source>
         <translation>/path/to/lilypond</translation>
     </message>
     <message>
-        <location filename="nasettings.ui" line="216"/>
+        <location filename="nasettings.ui" line="333"/>
         <source>Lilypond</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2107,25 +2144,25 @@ DEALINGS IN THE FONT SOFTWARE.&lt;br&gt;
     </message>
     <message>
         <location filename="naprog.cpp" line="67"/>
-        <source>&lt;h1&gt;Notatio Antiqua 0.8&amp;beta;&lt;/h1&gt;&amp;copy; 2009-2010 DGSOFTWARE&lt;br /&gt;&lt;br /&gt;David Gippner M.A.&lt;br /&gt;Hans-Berger-Stra&amp;szlig;e 20&lt;br /&gt;07747 Jena&lt;br /&gt;&lt;a href=&apos;mailto:davidgippner@googlemail.com&apos;&gt;davidgippner@googlemail.com&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&lt;br /&gt; This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;a href=http://www.gnu.org/licenses/&gt;http://www.gnu.org/licenses/&lt;/a&gt;.</source>
-        <oldsource>&lt;h1&gt;Notatio Antiqua 0.7&amp;szlig;&lt;/h1&gt;&amp;copy; 2009-2010 DGSOFTWARE&lt;br /&gt;&lt;br /&gt;David Gippner M.A.&lt;br /&gt;Hans-Berger-Stra&amp;szlig;e 20&lt;br /&gt;07747 Jena&lt;br /&gt;&lt;a href=&apos;mailto:davidgippner@googlemail.com&apos;&gt;davidgippner@googlemail.com&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&lt;br /&gt; This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;a href=http://www.gnu.org/licenses/&gt;http://www.gnu.org/licenses/&lt;/a&gt;.</oldsource>
+        <source>&lt;h1&gt;Notatio Antiqua 0.8&amp;beta;2&lt;/h1&gt;&amp;copy; 2009-2010 DGSOFTWARE&lt;br /&gt;&lt;br /&gt;David Gippner M.A.&lt;br /&gt;Hans-Berger-Stra&amp;szlig;e 20&lt;br /&gt;07747 Jena&lt;br /&gt;&lt;a href=&apos;mailto:davidgippner@googlemail.com&apos;&gt;davidgippner@googlemail.com&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&lt;br /&gt; This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;a href=http://www.gnu.org/licenses/&gt;http://www.gnu.org/licenses/&lt;/a&gt;.</source>
+        <oldsource>&lt;h1&gt;Notatio Antiqua 0.8&amp;beta;&lt;/h1&gt;&amp;copy; 2009-2010 DGSOFTWARE&lt;br /&gt;&lt;br /&gt;David Gippner M.A.&lt;br /&gt;Hans-Berger-Stra&amp;szlig;e 20&lt;br /&gt;07747 Jena&lt;br /&gt;&lt;a href=&apos;mailto:davidgippner@googlemail.com&apos;&gt;davidgippner@googlemail.com&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&lt;br /&gt; This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;a href=http://www.gnu.org/licenses/&gt;http://www.gnu.org/licenses/&lt;/a&gt;.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="naprog.cpp" line="148"/>
-        <location filename="naprog.cpp" line="505"/>
-        <location filename="naprog.cpp" line="589"/>
-        <location filename="naprog.cpp" line="595"/>
+        <location filename="naprog.cpp" line="520"/>
+        <location filename="naprog.cpp" line="604"/>
         <location filename="naprog.cpp" line="610"/>
-        <location filename="naprog.cpp" line="623"/>
-        <location filename="naprog.cpp" line="637"/>
-        <location filename="naprog.cpp" line="660"/>
-        <location filename="naprog.cpp" line="673"/>
-        <location filename="naprog.cpp" line="687"/>
-        <location filename="naprog.cpp" line="710"/>
-        <location filename="naprog.cpp" line="723"/>
-        <location filename="naprog.cpp" line="737"/>
-        <location filename="naprog.cpp" line="761"/>
+        <location filename="naprog.cpp" line="625"/>
+        <location filename="naprog.cpp" line="638"/>
+        <location filename="naprog.cpp" line="652"/>
+        <location filename="naprog.cpp" line="675"/>
+        <location filename="naprog.cpp" line="688"/>
+        <location filename="naprog.cpp" line="702"/>
+        <location filename="naprog.cpp" line="725"/>
+        <location filename="naprog.cpp" line="738"/>
+        <location filename="naprog.cpp" line="752"/>
+        <location filename="naprog.cpp" line="776"/>
         <source>Notatio Antiqua</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2158,40 +2195,39 @@ Do you really want to revert it to the last saved state?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="288"/>
+        <location filename="naprog.cpp" line="303"/>
         <source>Program output</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="298"/>
-        <source>Notatio Antiqua 0.8 beta</source>
-        <oldsource>Notatio Antiqua 0.7 beta</oldsource>
+        <location filename="naprog.cpp" line="313"/>
+        <source>Notatio Antiqua 0.8 beta 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="505"/>
+        <location filename="naprog.cpp" line="520"/>
         <source>Please select a template for the creation of the PDF file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="506"/>
+        <location filename="naprog.cpp" line="521"/>
         <source>Open Template</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="590"/>
+        <location filename="naprog.cpp" line="605"/>
         <source>No document window open, you can&apos;t run the desired action.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="596"/>
+        <location filename="naprog.cpp" line="611"/>
         <source>Initializing the paths for LaTeX, Lilypond and Gregorio. This can take a while, please be patient.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="611"/>
-        <location filename="naprog.cpp" line="661"/>
-        <location filename="naprog.cpp" line="711"/>
+        <location filename="naprog.cpp" line="626"/>
+        <location filename="naprog.cpp" line="676"/>
+        <location filename="naprog.cpp" line="726"/>
         <source>More than one path for LaTeX has been found:
 already scanned: %1
 newly discovered: %2
@@ -2199,9 +2235,9 @@ Do you want to use the newly discovered path instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="624"/>
-        <location filename="naprog.cpp" line="674"/>
-        <location filename="naprog.cpp" line="724"/>
+        <location filename="naprog.cpp" line="639"/>
+        <location filename="naprog.cpp" line="689"/>
+        <location filename="naprog.cpp" line="739"/>
         <source>More than one path for LilyPond has been found:
 already scanned: %1
 newly discovered: %2
@@ -2209,9 +2245,9 @@ Do you want to use the newly discovered path instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="638"/>
-        <location filename="naprog.cpp" line="688"/>
-        <location filename="naprog.cpp" line="738"/>
+        <location filename="naprog.cpp" line="653"/>
+        <location filename="naprog.cpp" line="703"/>
+        <location filename="naprog.cpp" line="753"/>
         <source>More than one path for Gregorio has been found:
 already scanned: %1
 newly discovered: %2
@@ -2219,7 +2255,7 @@ Do you want to use the newly discovered path instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="762"/>
+        <location filename="naprog.cpp" line="777"/>
         <source>The following paths have been found and have been written to ini file:
  LuaLaTeX: %1
  Lilypond: %2
